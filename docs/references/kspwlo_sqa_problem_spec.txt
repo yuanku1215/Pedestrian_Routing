@@ -1,100 +1,108 @@
 kSPwLO / kMDNSP aligned SQA specification
 ========================================
 
+English Summary
+---------------
+
 Source papers
 - Chondrogiannis et al. (2020), Finding k-shortest paths with limited overlap
-  Local file: /Users/tsun-yuanku/Downloads/s00778-020-00604-x.pdf
 - Hacker et al. (2021), Most Diverse Near-Shortest Paths
-  Local file: /Users/tsun-yuanku/Downloads/sigspatial21a.pdf
 
-Why this new formulation exists
-- The current single-path routing problem is still a weighted shortest-path problem.
-- Under that definition, Dijkstra is the exact reference solution and SQA should not be expected to beat it.
-- The new target problem adds an alternative-routing requirement: produce multiple short paths with limited overlap.
-- This creates pairwise path interactions, which is where QUBO/SQA becomes more meaningful.
+Why this formulation was introduced
+- The original single-route problem is still a weighted shortest-path problem.
+- Under that definition, Dijkstra remains the exact correctness reference.
+- To make the routing task more meaningful for QUBO/SQA, the project was upgraded to a limited-overlap alternative-routing problem.
 
-Problem definition adopted for this project
-- Base problem family: kSPwLO
+Problem definition used in this project
+- Problem family: kSPwLO
 - Graph: directed weighted graph G=(N,E)
-- Path length/cost: sum of edge weights along the path
-- Similarity measure: weighted overlap ratio
+- Path cost: sum of edge weights
+- Similarity: weighted overlap ratio
+- Current default: `k = 2`
+- Current default threshold: `theta = 0.5`
+- Current corridor parameter: `epsilon = 0.2`
 
-Similarity definition taken from kSPwLO
-- Sim(p, p') = sum_{e in p intersect p'} w(e) / min(length(p), length(p'))
-- In this project, overlap is measured on shared segment_id values.
-- Weight field used for overlap can be configured:
-  - cost
-  - length
+Similarity definition
+- Sim(p, p') = shared weighted overlap / min(path_length(p), path_length(p'))
+- In this implementation, overlap is measured on shared `segment_id` values.
 
 Current implementation scope
-- Rule name: kspwlo_routing
-- Current default: k=2
-- Threshold theta default: 0.5
-- Near-shortest corridor epsilon default: 0.2
-- QUBO overlap handling: soft penalty, not exact hard-threshold enforcement
-
-QUBO variable design
-- x_(r,e) in {0,1}
-- r = route index, currently 1..k
-- e = directed edge in the sidewalk graph
-- x_(r,e)=1 means edge e is selected for route r
-
-QUBO objective
-- Minimize total route cost across all routes
-- Add soft overlap penalty for shared segments across routes
-
-Implemented objective structure
-- Sum_r Sum_e c_e * x_(r,e)
-- Plus lambda_overlap * overlap_weight(segment) * x_(r,e_i) * x_(r',e_j)
-- The overlap coupling is added across route pairs and across directed edges that belong to the same segment_id
-
-Implemented path constraints for each route
-- Source out-degree = 1
-- Source in-degree = 0
-- Target in-degree = 1
-- Target out-degree = 0
-- Intermediate node flow balance: in - out = 0
-- Intermediate node incoming degree <= 1
-- Intermediate node outgoing degree <= 1
-- Same segment cannot be selected twice within one route
+- Rule name: `kspwlo_routing`
+- Variables: binary edge-selection variables for each route
+- Constraints: path feasibility, source/target degree rules, intermediate flow balance, degree caps, reverse/duplicate suppression
+- Overlap control: currently implemented through budget / ratio-like penalty constructions rather than a fully exact hard-threshold QUBO
 
 What is aligned with the literature
-- Directed weighted graph model
-- kSPwLO overlap semantics
-- kSPwLO threshold theta as the main overlap control parameter
-- kMDNSP-inspired penalty shortest-path heuristic as the classical baseline reference
-- Near-shortest corridor epsilon for baseline candidate generation
+- directed weighted graph model
+- limited-overlap semantics
+- theta-controlled overlap
+- kMDNSP-style penalty shortest-path heuristic as the classical baseline
+- near-shortest corridor idea
 
-What is intentionally simplified in v1
-- Overlap threshold is not yet encoded as an exact hard QUBO constraint
-- The SQA formulation uses a soft overlap penalty instead
-- The rule currently defaults to k=2 before scaling to larger k
-- Completeness relaxation from kSPwLO is not the default behavior
+What is still simplified
+- overlap is not yet encoded as a mathematically exact hard threshold
+- the current implementation focuses on `k = 2`
+- completeness-relaxation procedures from the original paper are not the default behavior
 
-Baseline heuristic implemented in this repo
-- First route: standard shortest path
-- Remaining route(s): kMDNSP-style penalty shortest path inside a near-shortest corridor
-- Penalized weight: w'(e) = f * w(e) for edges already used by selected routes
-- Penalty factor starts from 2.0 and decreases as search fails to find a new acceptable path
-- Candidate route must satisfy:
-  - simple O-D route
-  - near-shortest cost bound
-  - overlap threshold theta against already selected paths
+Baseline heuristic in this repo
+- Route 1: shortest path
+- Route 2: penalty-based shortest path under overlap and near-shortest checks
+- This baseline is useful as both a reference solution and a warm-start source
 
-Why this baseline is useful
-- It keeps the routing logic close to the literature
-- It gives a classical non-QUBO reference on the same graph and same path-diversification idea
-- It can also be used as an SQA warm start
+Recommended next steps
+1. Decide whether overlap should remain penalty-based or move closer to an exact hard threshold.
+2. Improve search moves so SQA is less dependent on warm start.
+3. Benchmark broader OD/time-slice settings once solver behavior improves.
 
-Files added for the new formulation
-- /Users/tsun-yuanku/local/qa_course_platform_github_pages/SQA_Algorithm/rules/kspwlo_routing/adapter.py
-- /Users/tsun-yuanku/local/qa_course_platform_github_pages/SQA_Algorithm/rules/kspwlo_routing/builder.py
-- /Users/tsun-yuanku/local/qa_course_platform_github_pages/SQA_Algorithm/rules/kspwlo_routing/config.yaml
+中文摘要
+--------
 
-Next recommended steps
-1. Run a smoke test on one O-D pair and inspect:
-   - two route GeoJSONs
-   - pairwise similarity
-   - baseline vs SQA route set
-2. Decide whether overlap should remain a soft penalty or move toward a harder threshold constraint
-3. If results are stable, build a benchmark across time slices and O-D pairs
+參考文獻
+- Chondrogiannis et al. (2020), Finding k-shortest paths with limited overlap
+- Hacker et al. (2021), Most Diverse Near-Shortest Paths
+
+為什麼要引入這個 formulation
+- 原本的單一路徑問題，本質上仍是加權最短路問題。
+- 在這個定義下，Dijkstra 仍然是精確且合理的 correctness reference。
+- 為了讓 QUBO/SQA 題目更有意義，專案把問題升級成 limited-overlap alternative routing。
+
+本專案採用的問題定義
+- 問題家族：kSPwLO
+- 圖模型：有向加權圖 G=(N,E)
+- 路徑成本：edge weight 加總
+- 相似度：weighted overlap ratio
+- 目前預設：`k = 2`
+- 目前預設門檻：`theta = 0.5`
+- 目前 corridor 參數：`epsilon = 0.2`
+
+相似度定義
+- Sim(p, p') = 共享加權 overlap / 兩條路中較短者的路徑長度
+- 在目前實作中，overlap 是透過共享 `segment_id` 來衡量。
+
+目前實作範圍
+- rule 名稱：`kspwlo_routing`
+- 變數：每條路各自的二元 edge-selection 變數
+- 約束：路徑可行性、source/target 度數限制、中間節點 flow balance、度數上限、重複/反向邊抑制
+- overlap 控制：目前是 budget / ratio-like penalty 類型的近似，不是完全精確的 hard-threshold QUBO
+
+哪些部分已和文獻對齊
+- directed weighted graph 模型
+- limited-overlap semantics
+- 以 theta 控制重疊程度
+- 使用 kMDNSP 風格的 penalty shortest-path heuristic 當 classical baseline
+- near-shortest corridor 的概念
+
+哪些部分仍是簡化版
+- overlap 尚未被寫成數學上完全精確的 hard threshold
+- 目前實作仍聚焦在 `k = 2`
+- 原文中的 completeness relaxation 程序目前不是預設行為
+
+repo 中的 baseline heuristic
+- 路徑 1：shortest path
+- 路徑 2：在 overlap 與 near-shortest 檢查下，使用 penalty-based shortest path
+- 這個 baseline 同時可作為 reference solution，也可作為 warm start 來源
+
+建議的下一步
+1. 決定 overlap 要繼續維持 penalty-based，還是再往精確 hard threshold 推進。
+2. 改良 search moves，降低 SQA 對 warm start 的依賴。
+3. 等 solver 表現更成熟後，再擴大 OD / 時段 benchmark。

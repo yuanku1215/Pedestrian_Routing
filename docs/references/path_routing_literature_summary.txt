@@ -1,251 +1,84 @@
 Path Routing Literature Summary
-Generated: 2026-04-07
+===============================
+
+English Summary
+---------------
 
 Goal
-1. Identify a rigorous baseline method for shortest-path / routing.
-2. Identify academic evidence on why single-bit flip is weak for routing-like QUBO problems.
-3. Identify better neighborhood / move designs from the literature.
+1. Identify a rigorous baseline for shortest-path and routing tasks.
+2. Explain why single-bit flip is weak for routing-like QUBO problems.
+3. Identify stronger neighborhood ideas from the literature.
 
-============================================================
-Part A. Baseline: why Dijkstra should be the reference answer
-============================================================
+Main conclusions
+1. Dijkstra should be treated as the exact baseline for the current weighted shortest-path setting.
+2. One-flip local search is structurally vulnerable to local minima in QUBO landscapes.
+3. Routing heuristics in the literature usually rely on structured route moves rather than naive bit-by-bit updates.
+4. Multi-neighborhood methods such as VNS are widely supported in routing research.
 
-[1] Dijkstra, E. W. (1959).
-Title: A Note on Two Problems in Connexion with Graphs
-Venue: Numerische Mathematik 1, 269-271
-DOI: 10.1007/BF01386390
-Use for this project:
-- This is the classic exact algorithm for shortest path with nonnegative edge weights.
-- Our current path-routing data uses nonnegative edge costs, so Dijkstra is the natural exact baseline.
-Conclusion for us:
-- Every SQA run should be compared against Dijkstra using the exact same edge cost definition.
-- Comparison metrics should include:
-  1. route_found
-  2. route_cost_gap
-  3. route_length_gap
-  4. QUBO energy gap under the same formulation
+Key references and their role
+- Dijkstra (1959): exact baseline for shortest path with nonnegative edge weights
+- Verma and Lewis (2021): one-flip local optima are meaningful traps in QUBO landscapes
+- Osman (1991): simulated annealing paired with 3-opt for VRP, showing route-level moves matter
+- VNS literature: multiple neighborhoods are often stronger than a single local move in routing-like problems
 
-Practical implication:
-- Dijkstra is not the competitor we are trying to beat in raw exactness.
-- Dijkstra is the correctness oracle. If SQA cannot match or approach it, we should treat the issue as solver / neighborhood weakness or formulation weakness.
+Implication for this project
+- The real weakness is not checkerboard speed or odd/even update logic.
+- The real weakness is that a one-edge flip neighborhood is too local for a path structure.
+- A valid route usually requires coordinated changes across multiple edges.
+- That is why fragmentary edge sets appear more easily than a complete path.
 
-============================================================
-Part B. Why single-bit flip is weak for routing / path problems
-============================================================
+Operational recommendation
+- Keep Dijkstra as the correctness oracle.
+- Compare every SQA result against the same edge-cost definition.
+- Replace or augment single-bit flip with structured path moves such as:
+  - warm-start from a path
+  - segment insertion / deletion
+  - 2-opt style reconnect
+  - cycle/path repair
+  - variable-neighborhood search
 
-[2] Verma, A., and Lewis, M. (2021).
-Title: Constraint Programming to Discover One-Flip Local Optima of Quadratic Unconstrained Binary Optimization Problems
-Venue: arXiv
-DOI: 10.48550/arXiv.2104.01709
-Link: https://arxiv.org/abs/2104.01709
-Main point:
-- The paper studies one-flip local optima in QUBO.
-- It explicitly treats one-flip local optimality as an important structural object in the landscape.
-Why this matters here:
-- Our current SQA move is effectively a sequence of single-bit flips.
-- If a routing formulation requires many coordinated edge changes before feasibility or improvement appears, then one-flip local optima become traps.
-Conclusion for us:
-- Single-bit flip is structurally vulnerable to being trapped by local minima in QUBO landscapes.
-- This does not prove routing is impossible with bit flips, but it strongly supports the observation that one-flip neighborhoods are often too weak for strongly coupled combinatorial structures.
+Best practical recommendation
+1. Keep Dijkstra as baseline and warm-start source.
+2. Stop relying only on random bit initialization for routing.
+3. Add repair-aware local search with path-segment moves.
 
-[3] General interpretation for our routing problem
-What the literature and our experiments jointly suggest:
-- A valid path is not a collection of independent good bits.
-- A valid path requires several edge variables to align at once:
-  1. one edge out of source
-  2. one edge into target
-  3. balanced flow on intermediate nodes
-  4. no reverse-direction conflicts
-  5. no dangling fragments
-- Therefore many single flips first create infeasible partial structures before they can become a better path.
-- This creates an energy barrier: intermediate states are bad, even if the final multi-edge change would be good.
+中文摘要
+--------
 
-Working conclusion:
-- The core weakness is not "checkerboard parity updates are slow".
-- The core weakness is "the neighborhood is too local and too small".
+目標
+1. 找出 shortest-path / routing 題目的嚴謹 baseline。
+2. 說明為什麼 single-bit flip 對 routing 類 QUBO 題目很弱。
+3. 找出文獻中更合理的 neighborhood 設計。
 
-============================================================
-Part C. What the routing / metaheuristics literature actually does
-============================================================
+主要結論
+1. 在目前的加權最短路設定下，Dijkstra 應該被視為精確 baseline。
+2. one-flip local search 在 QUBO landscape 中本來就容易卡在局部最小值。
+3. routing 文獻通常使用有結構的 route moves，而不是 naive 的逐 bit 更新。
+4. 像 VNS 這種多鄰域方法，在 routing 研究裡有很強的支持。
 
-[4] Osman, I. H. (1991).
-Title: A 3-OPT based simulated annealing algorithm for vehicle routing problems
-Venue: Computers & Industrial Engineering 21(1-4), 635-639
-Link: https://www.sciencedirect.com/science/article/pii/0360835291901653
-Main point:
-- Simulated annealing is combined with 3-opt for VRP.
-Why this matters:
-- This is a direct historical signal that for routing problems, SA was not commonly paired with naive bit-by-bit updates.
-- It was paired with route-structure moves such as 3-opt.
-Conclusion for us:
-- If we want an annealing-style solver for routing, route-level moves are academically well grounded.
-- A "path segment move" is more aligned with the literature than a one-edge flip.
+關鍵文獻與用途
+- Dijkstra (1959): 非負權重最短路的精確 baseline
+- Verma and Lewis (2021): 說明 one-flip local optima 是 QUBO 中真實存在的陷阱
+- Osman (1991): SA 與 3-opt 結合解 VRP，顯示 route-level move 很重要
+- VNS 系列文獻：說明多鄰域通常比單一鄰域更適合 routing 類問題
 
-[5] Stenger, A., Vigo, D., Enz, S., and Schwind, M. (2012).
-Title: An Adaptive Variable Neighborhood Search Algorithm for a Vehicle Routing Problem Arising in Small Package Shipping
-Venue: Transportation Science 47(1), 64-80
-DOI: 10.1287/trsc.1110.0396
-Link: https://pubsonline.informs.org/doi/10.1287/trsc.1110.0396
-Main point:
-- Uses an adaptive VNS with cyclic-exchange neighborhoods.
-- Reports high-quality solutions in short computation time.
-Why this matters:
-- Modern routing heuristics often rely on multiple neighborhoods, not a single move type.
-- "Adaptive neighborhood choice" is an important design pattern.
-Conclusion for us:
-- If we stay with metaheuristics, we should not rely on only one neighborhood.
-- A multi-neighborhood scheme is likely better than a single flip rule.
+對本專案的意義
+- 真正的弱點不是 checkerboard 更新快不快。
+- 真正的弱點是 one-edge flip neighborhood 對 path structure 太局部。
+- 合法路徑通常需要多條邊同時協調。
+- 這就是為什麼零碎 edge set 比完整 path 更容易出現。
 
-[6] Hemmelmayr, V. C., Cordeau, J.-F., and Crainic, T. G. (2009).
-Title: A variable neighborhood search heuristic for periodic routing problems
-Venue: European Journal of Operational Research 195(3), 791-802
-DOI: 10.1016/j.ejor.2007.08.048
-Link: https://www.sciencedirect.com/science/article/pii/S0377221707011034
-Main point:
-- Presents a VNS heuristic that is competitive or better than previous methods on periodic routing problems.
-Why this matters:
-- Routing performance benefits from changing neighborhood structures systematically.
-Conclusion for us:
-- Variable-neighborhood logic is not an exotic choice; it is standard and strong in routing research.
+實務建議
+- 把 Dijkstra 當成 correctness oracle。
+- 每一個 SQA 結果都要用同一套 edge cost 與 Dijkstra 比較。
+- 用更有結構的 path moves 取代或補強 single-bit flip，例如：
+  - path warm start
+  - segment insertion / deletion
+  - 2-opt style reconnect
+  - cycle/path repair
+  - variable-neighborhood search
 
-[7] Hansen, P., Mladenovic, N., and coauthors (2023).
-Title: Variable Neighborhood Search: The power of change and simplicity
-Venue: Computers & Operations Research 155, 106221
-DOI: 10.1016/j.cor.2023.106221
-Link: https://www.sciencedirect.com/science/article/pii/S0305054823000850
-Main point:
-- Reviews the development of VNS and emphasizes systematic change of neighborhoods.
-Why this matters:
-- It gives strong methodological support for moving away from one fixed local move.
-Conclusion for us:
-- For routing, changing neighborhoods is not a hack; it is a core design principle.
-
-[8] Tello, F., Jimenez-Martin, A., Mateos, A., and Lozano, P. (2019).
-Title: A Comparative Analysis of Simulated Annealing and Variable Neighborhood Search in the ATCo Work-Shift Scheduling Problem
-Venue: Mathematics 7(7), 636
-DOI: 10.3390/math7070636
-Link: https://www.mdpi.com/2227-7390/7/7/636
-Main point:
-- Compares SA and VNS on a constrained combinatorial problem.
-- VNS outperforms SA on several tested instances in solution quality and/or run time.
-Why this matters:
-- The problem is not routing, but it is still a constrained combinatorial optimization setting with a rugged landscape.
-Conclusion for us:
-- When feasibility and structure matter, VNS-style multi-neighborhood search can outperform plain SA.
-- This supports using richer neighborhoods for our path problem.
-
-============================================================
-Part D. Synthesis for this project
-============================================================
-
-What the literature says in plain language:
-1. Dijkstra should be our exact baseline.
-2. One-flip local search is a real trap structure in QUBO landscapes.
-3. Routing heuristics usually work with structured route moves, not naive bit flips.
-4. Multi-neighborhood strategies are well established and often superior for routing-like problems.
-
-What this means for our current SQA engine:
-- The checkerboard / odd-even slice update is a speed optimization only.
-- It does not solve the deeper neighborhood problem.
-- Our current move is still too local: one edge at a time.
-- That is why the solver tends to produce fragments, tiny cycles, or disconnected edge sets instead of a full path.
-
-============================================================
-Part E. Two operational strategies going forward
-============================================================
-
-Strategy 1. Keep Dijkstra as the correctness baseline
-Workflow:
-1. Define edge cost exactly once.
-2. Run Dijkstra on every instance.
-3. Export:
-   - baseline route geometry
-   - route length
-   - route cost
-   - QUBO energy of the baseline route
-4. Compare every annealing-based result against the baseline.
-
-Why this is the right baseline:
-- Exact for our current shortest-path setting
-- Fast
-- Interpretable
-- Gives immediate diagnostics
-
-Strategy 2. Replace single-bit flip with structured routing moves
-Candidate move families from the literature and their mapping to our problem:
-
-A. Path warm start
-- Start SQA / local search from the Dijkstra route instead of random bits.
-- This is the most practical first improvement.
-Why:
-- The current random initialization is too far from any feasible path.
-- Warm start lowers the barrier dramatically.
-
-B. Segment insertion / deletion
-- Add or remove a short contiguous path segment rather than one edge.
-Why:
-- A valid improvement usually requires several coordinated edge changes.
-- Segment moves can cross the infeasible intermediate states that block one-bit flips.
-
-C. 2-opt style reconnect for paths
-- Break two connections and reconnect path segments differently.
-Why:
-- Standard in routing and TSP/VRP literature.
-- Good for correcting detours or replacing an internal path piece.
-
-D. Cycle repair / path repair
-- After proposing edges, run a repair routine that reconnects fragments into one source-target path.
-Why:
-- This can be combined with QUBO rather than replacing it completely.
-- Very useful when the solver finds near-feasible fragments.
-
-E. Variable Neighborhood Search
-- Alternate among several move types:
-  1. segment insertion
-  2. segment deletion
-  3. 2-opt reconnect
-  4. short reroute between two anchor nodes
-Why:
-- Strong support from routing literature.
-
-============================================================
-Part F. Best practical recommendation for the current codebase
-============================================================
-
-Best next step:
-1. Keep Dijkstra as baseline and warm start.
-2. Stop relying on pure random bit initialization for routing.
-3. Add a repair-aware local search with path-segment moves.
-
-Most promising first implementation:
-- Dijkstra warm start + path repair + small segment reroute move
-
-Why this is the best tradeoff:
-- Much easier than implementing a full VNS framework immediately
-- Much more realistic than staying with one-edge flips
-- Closest to the actual structure of shortest-path problems
-- Easy to benchmark against current outputs
-
-If a second move is added after that:
-- Add 2-opt style reconnect between two route positions
-
-If a third move is added:
-- Upgrade to a variable-neighborhood schedule over:
-  1. reroute between anchors
-  2. segment insertion/deletion
-  3. 2-opt reconnect
-
-============================================================
-Bottom line
-============================================================
-
-Academic conclusion:
-- Dijkstra is the correct exact baseline for our current shortest-path setting.
-- The literature strongly supports the claim that one-bit / one-flip neighborhoods are often too weak for structured routing problems.
-- Better performance is typically obtained by route-structured neighborhoods such as 2-opt, 3-opt, insertion, exchange, repair, and variable neighborhood search.
-
-Project conclusion:
-- Our current bottleneck is not mainly computational speed.
-- Our current bottleneck is the mismatch between the routing structure and the one-edge-flip neighborhood.
-- Therefore the next improvement should target the move design, not only the annealing schedule.
-
+最實際的下一步
+1. 保留 Dijkstra 當 baseline 與 warm-start 來源。
+2. 不要再只依賴 random bit initialization 來做 routing。
+3. 加入帶 repair 能力的 path-segment local search。
