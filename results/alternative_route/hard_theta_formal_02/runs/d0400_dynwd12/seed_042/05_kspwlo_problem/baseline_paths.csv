@@ -1,0 +1,3 @@
+path_label,route_found,route_cost,route_length,route_average_walkability
+baseline_path_1,True,904.131,703.126,2.1285
+baseline_path_2,True,1075.2163739418497,755.52637394185,1.6348421052631577

@@ -1,0 +1,21 @@
+{
+    "selected_edge_count": 45,
+    "route_found": true,
+    "decoded_route_length": 2428.2736455875347,
+    "decoded_route_cost": 3093.503645587535,
+    "decoded_route_average_walkability": 2.047975,
+    "comparison_to_dijkstra": {
+        "matches_exact_route": true,
+        "baseline_k_paths_found": 2,
+        "sqa_all_paths_found": true,
+        "sqa_total_cost_minus_baseline": 0.0
+    },
+    "constraint_diagnostics": {
+        "k_paths_requested": 2,
+        "all_paths_found": true,
+        "pairwise_similarity_within_threshold": true,
+        "pairwise_hard_budget_within_cap": true,
+        "max_pairwise_similarity": 0.0,
+        "max_pairwise_shared_weight": 0.0
+    }
+}

@@ -1,0 +1,14 @@
+.DS_Store
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.swp
+
+# Runtime outputs
+src/sqa_algorithm/outputs/
+src/sqa_algorithm/tmp/
+
+# OS / editors
+.vscode/
+.idea/

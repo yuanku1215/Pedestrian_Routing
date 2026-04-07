@@ -1,0 +1,31 @@
+penalty_factor: 10000.0
+endpoint_penalty: 10000.0
+intermediate_penalty: 10000.0
+direction_conflict_penalty: 10000.0
+alpha_distance: 1.0
+beta_walkability: 5.0
+walkability_field: dynwe21
+directed_edges_file: directed_edges_main_component.geojson
+segments_file: segments_main_component.geojson
+coord_crs: EPSG:3826
+init_prob: 0.01
+source_coord:
+- 169860.09909955162
+- 2544071.554789246
+target_coord:
+- 169618.63476443553
+- 2543752.7950730636
+k_paths: 2
+theta_overlap: 0.5
+epsilon_near_shortest: 0.2
+soft_overlap_penalty: 3.0
+overlap_weight_field: cost
+use_hard_overlap_budget: true
+overlap_link_penalty: 10000.0
+hard_overlap_penalty: 10000.0
+hard_overlap_budget_resolution: 5.0
+use_penalty_baseline_warm_start: true
+warm_start_flip_prob: 0.02
+baseline_complete_result: false
+baseline_relax_theta_step: 0.02
+baseline_max_candidates: 64

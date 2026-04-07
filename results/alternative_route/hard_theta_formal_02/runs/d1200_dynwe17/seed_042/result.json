@@ -1,0 +1,3087 @@
+{
+    "source_node": 80,
+    "target_node": 297,
+    "source_coord_projected": [
+        170278.27415765307,
+        2544772.2135739936
+    ],
+    "target_coord_projected": [
+        169647.8646954599,
+        2543747.821424202
+    ],
+    "selected_edge_count": 55,
+    "route_found": true,
+    "decoded_route_length": 3630.675892892451,
+    "decoded_route_cost": 4453.13089289245,
+    "decoded_route_average_walkability": 2.0177002652519893,
+    "selected_state_qubo_energy": -45201.800411467506,
+    "problem_definition": {
+        "problem_name": "kSPwLO-style alternative routing with SQA",
+        "k_paths": 2,
+        "theta_overlap": 0.5,
+        "epsilon_near_shortest": 0.2,
+        "overlap_weight_field": "cost",
+        "soft_overlap_penalty": 3.0,
+        "use_hard_overlap_budget": true,
+        "hard_overlap_penalty": 10000.0,
+        "overlap_link_penalty": 10000.0,
+        "hard_overlap_budget_cap": 1066.6569464462254,
+        "hard_overlap_budget_resolution": 5.0,
+        "hard_overlap_slack_bits_per_pair": 8,
+        "source_node": 80,
+        "target_node": 297
+    },
+    "sqa_paths": [
+        {
+            "path_label": "sqa_path_1",
+            "route_found": true,
+            "edge_count": 26,
+            "node_count": 27,
+            "route_length": 1765.743892892451,
+            "route_cost": 2133.313892892451,
+            "route_average_walkability": 2.172538461538461,
+            "is_simple_path": true,
+            "overlap_weight_field": "cost",
+            "route_weight_for_overlap": 2133.313892892451,
+            "segment_ids": [
+                "414:0",
+                "87:0",
+                "88:0",
+                "91:0",
+                "90:0",
+                "82:0",
+                "191:0",
+                "229:1",
+                "229:0",
+                "228:0",
+                "192:0",
+                "493:0",
+                "34:0",
+                "37:0",
+                "253:0",
+                "254:0",
+                "255:0",
+                "284:0",
+                "299:0",
+                "300:0",
+                "301:0",
+                "302:0",
+                "303:0",
+                "372:0",
+                "376:0",
+                "377:0"
+            ],
+            "signatures": [
+                [
+                    "414:0",
+                    "backward",
+                    80,
+                    69
+                ],
+                [
+                    "87:0",
+                    "backward",
+                    69,
+                    68
+                ],
+                [
+                    "88:0",
+                    "forward",
+                    68,
+                    70
+                ],
+                [
+                    "91:0",
+                    "backward",
+                    70,
+                    71
+                ],
+                [
+                    "90:0",
+                    "backward",
+                    71,
+                    64
+                ],
+                [
+                    "82:0",
+                    "forward",
+                    64,
+                    65
+                ],
+                [
+                    "191:0",
+                    "forward",
+                    65,
+                    141
+                ],
+                [
+                    "229:1",
+                    "forward",
+                    141,
+                    172
+                ],
+                [
+                    "229:0",
+                    "forward",
+                    172,
+                    171
+                ],
+                [
+                    "228:0",
+                    "forward",
+                    171,
+                    143
+                ],
+                [
+                    "192:0",
+                    "forward",
+                    143,
+                    144
+                ],
+                [
+                    "493:0",
+                    "forward",
+                    144,
+                    23
+                ],
+                [
+                    "34:0",
+                    "forward",
+                    23,
+                    24
+                ],
+                [
+                    "37:0",
+                    "forward",
+                    24,
+                    26
+                ],
+                [
+                    "253:0",
+                    "forward",
+                    26,
+                    190
+                ],
+                [
+                    "254:0",
+                    "forward",
+                    190,
+                    191
+                ],
+                [
+                    "255:0",
+                    "forward",
+                    191,
+                    192
+                ],
+                [
+                    "284:0",
+                    "forward",
+                    192,
+                    223
+                ],
+                [
+                    "299:0",
+                    "forward",
+                    223,
+                    237
+                ],
+                [
+                    "300:0",
+                    "forward",
+                    237,
+                    238
+                ],
+                [
+                    "301:0",
+                    "forward",
+                    238,
+                    239
+                ],
+                [
+                    "302:0",
+                    "forward",
+                    239,
+                    240
+                ],
+                [
+                    "303:0",
+                    "forward",
+                    240,
+                    241
+                ],
+                [
+                    "372:0",
+                    "forward",
+                    241,
+                    292
+                ],
+                [
+                    "376:0",
+                    "forward",
+                    292,
+                    296
+                ],
+                [
+                    "377:0",
+                    "forward",
+                    296,
+                    297
+                ]
+            ],
+            "route_edges": [
+                {
+                    "segment_id": "414:0",
+                    "orig_feature_id": 414,
+                    "direction": "backward",
+                    "length": 98.757,
+                    "dynwd": 2.744,
+                    "cost": 110.037,
+                    "source_node": 80,
+                    "target_node": 69,
+                    "edge_idx": 753
+                },
+                {
+                    "segment_id": "87:0",
+                    "orig_feature_id": 87,
+                    "direction": "backward",
+                    "length": 82.145,
+                    "dynwd": 2.744,
+                    "cost": 93.425,
+                    "source_node": 69,
+                    "target_node": 68,
+                    "edge_idx": 173
+                },
+                {
+                    "segment_id": "88:0",
+                    "orig_feature_id": 88,
+                    "direction": "forward",
+                    "length": 153.106,
+                    "dynwd": 2.338,
+                    "cost": 166.416,
+                    "source_node": 68,
+                    "target_node": 70,
+                    "edge_idx": 174
+                },
+                {
+                    "segment_id": "91:0",
+                    "orig_feature_id": 91,
+                    "direction": "backward",
+                    "length": 20.232,
+                    "dynwd": 1.677,
+                    "cost": 36.846999999999994,
+                    "source_node": 70,
+                    "target_node": 71,
+                    "edge_idx": 181
+                },
+                {
+                    "segment_id": "90:0",
+                    "orig_feature_id": 90,
+                    "direction": "backward",
+                    "length": 35.895,
+                    "dynwd": 1.758,
+                    "cost": 52.105000000000004,
+                    "source_node": 71,
+                    "target_node": 64,
+                    "edge_idx": 179
+                },
+                {
+                    "segment_id": "82:0",
+                    "orig_feature_id": 82,
+                    "direction": "forward",
+                    "length": 186.942,
+                    "dynwd": 2.604,
+                    "cost": 198.922,
+                    "source_node": 64,
+                    "target_node": 65,
+                    "edge_idx": 162
+                },
+                {
+                    "segment_id": "191:0",
+                    "orig_feature_id": 191,
+                    "direction": "forward",
+                    "length": 154.44,
+                    "dynwd": 2.52,
+                    "cost": 166.84,
+                    "source_node": 65,
+                    "target_node": 141,
+                    "edge_idx": 340
+                },
+                {
+                    "segment_id": "229:1",
+                    "orig_feature_id": 229,
+                    "direction": "forward",
+                    "length": 89.15532276014177,
+                    "dynwd": 2.415,
+                    "cost": 102.08032276014177,
+                    "source_node": 141,
+                    "target_node": 172,
+                    "edge_idx": 414
+                },
+                {
+                    "segment_id": "229:0",
+                    "orig_feature_id": 229,
+                    "direction": "forward",
+                    "length": 8.029570132309429,
+                    "dynwd": 2.415,
+                    "cost": 20.954570132309428,
+                    "source_node": 172,
+                    "target_node": 171,
+                    "edge_idx": 412
+                },
+                {
+                    "segment_id": "228:0",
+                    "orig_feature_id": 228,
+                    "direction": "forward",
+                    "length": 10.355,
+                    "dynwd": 1.819,
+                    "cost": 26.26,
+                    "source_node": 171,
+                    "target_node": 143,
+                    "edge_idx": 410
+                },
+                {
+                    "segment_id": "192:0",
+                    "orig_feature_id": 192,
+                    "direction": "forward",
+                    "length": 133.229,
+                    "dynwd": 2.321,
+                    "cost": 146.62400000000002,
+                    "source_node": 143,
+                    "target_node": 144,
+                    "edge_idx": 342
+                },
+                {
+                    "segment_id": "493:0",
+                    "orig_feature_id": 493,
+                    "direction": "forward",
+                    "length": 100.687,
+                    "dynwd": 2.421,
+                    "cost": 113.582,
+                    "source_node": 144,
+                    "target_node": 23,
+                    "edge_idx": 904
+                },
+                {
+                    "segment_id": "34:0",
+                    "orig_feature_id": 34,
+                    "direction": "forward",
+                    "length": 19.635,
+                    "dynwd": 1.758,
+                    "cost": 35.845,
+                    "source_node": 23,
+                    "target_node": 24,
+                    "edge_idx": 66
+                },
+                {
+                    "segment_id": "37:0",
+                    "orig_feature_id": 37,
+                    "direction": "forward",
+                    "length": 96.309,
+                    "dynwd": 2.404,
+                    "cost": 109.289,
+                    "source_node": 24,
+                    "target_node": 26,
+                    "edge_idx": 72
+                },
+                {
+                    "segment_id": "253:0",
+                    "orig_feature_id": 253,
+                    "direction": "forward",
+                    "length": 36.562,
+                    "dynwd": 2.416,
+                    "cost": 49.482,
+                    "source_node": 26,
+                    "target_node": 190,
+                    "edge_idx": 456
+                },
+                {
+                    "segment_id": "254:0",
+                    "orig_feature_id": 254,
+                    "direction": "forward",
+                    "length": 177.491,
+                    "dynwd": 2.416,
+                    "cost": 190.411,
+                    "source_node": 190,
+                    "target_node": 191,
+                    "edge_idx": 458
+                },
+                {
+                    "segment_id": "255:0",
+                    "orig_feature_id": 255,
+                    "direction": "forward",
+                    "length": 104.375,
+                    "dynwd": 2.416,
+                    "cost": 117.295,
+                    "source_node": 191,
+                    "target_node": 192,
+                    "edge_idx": 460
+                },
+                {
+                    "segment_id": "284:0",
+                    "orig_feature_id": 284,
+                    "direction": "forward",
+                    "length": 20.853,
+                    "dynwd": 1.702,
+                    "cost": 37.343,
+                    "source_node": 192,
+                    "target_node": 223,
+                    "edge_idx": 518
+                },
+                {
+                    "segment_id": "299:0",
+                    "orig_feature_id": 299,
+                    "direction": "forward",
+                    "length": 91.387,
+                    "dynwd": 2.112,
+                    "cost": 105.827,
+                    "source_node": 223,
+                    "target_node": 237,
+                    "edge_idx": 548
+                },
+                {
+                    "segment_id": "300:0",
+                    "orig_feature_id": 300,
+                    "direction": "forward",
+                    "length": 19.552,
+                    "dynwd": 2.296,
+                    "cost": 33.072,
+                    "source_node": 237,
+                    "target_node": 238,
+                    "edge_idx": 550
+                },
+                {
+                    "segment_id": "301:0",
+                    "orig_feature_id": 301,
+                    "direction": "forward",
+                    "length": 10.866,
+                    "dynwd": 2.296,
+                    "cost": 24.386000000000003,
+                    "source_node": 238,
+                    "target_node": 239,
+                    "edge_idx": 552
+                },
+                {
+                    "segment_id": "302:0",
+                    "orig_feature_id": 302,
+                    "direction": "forward",
+                    "length": 5.895,
+                    "dynwd": 1.619,
+                    "cost": 22.8,
+                    "source_node": 239,
+                    "target_node": 240,
+                    "edge_idx": 554
+                },
+                {
+                    "segment_id": "303:0",
+                    "orig_feature_id": 303,
+                    "direction": "forward",
+                    "length": 15.033,
+                    "dynwd": 2.184,
+                    "cost": 29.113,
+                    "source_node": 240,
+                    "target_node": 241,
+                    "edge_idx": 556
+                },
+                {
+                    "segment_id": "372:0",
+                    "orig_feature_id": 372,
+                    "direction": "forward",
+                    "length": 19.891,
+                    "dynwd": 1.235,
+                    "cost": 38.715999999999994,
+                    "source_node": 241,
+                    "target_node": 292,
+                    "edge_idx": 670
+                },
+                {
+                    "segment_id": "376:0",
+                    "orig_feature_id": 376,
+                    "direction": "forward",
+                    "length": 42.498,
+                    "dynwd": 2.009,
+                    "cost": 57.452999999999996,
+                    "source_node": 292,
+                    "target_node": 296,
+                    "edge_idx": 678
+                },
+                {
+                    "segment_id": "377:0",
+                    "orig_feature_id": 377,
+                    "direction": "forward",
+                    "length": 32.424,
+                    "dynwd": 1.847,
+                    "cost": 48.189,
+                    "source_node": 296,
+                    "target_node": 297,
+                    "edge_idx": 680
+                }
+            ],
+            "path_index": 1,
+            "selected_edge_count": 26,
+            "invalid_selected_edges_count": 0
+        },
+        {
+            "path_label": "sqa_path_2",
+            "route_found": true,
+            "edge_count": 29,
+            "node_count": 30,
+            "route_length": 1864.932,
+            "route_cost": 2319.8169999999996,
+            "route_average_walkability": 1.8628620689655173,
+            "is_simple_path": true,
+            "overlap_weight_field": "cost",
+            "route_weight_for_overlap": 2319.8169999999996,
+            "segment_ids": [
+                "100:0",
+                "412:0",
+                "83:0",
+                "75:0",
+                "483:0",
+                "50:0",
+                "242:0",
+                "262:0",
+                "562:0",
+                "563:0",
+                "532:0",
+                "530:0",
+                "529:0",
+                "523:0",
+                "257:0",
+                "256:0",
+                "517:0",
+                "282:0",
+                "283:0",
+                "370:0",
+                "567:0",
+                "367:0",
+                "371:0",
+                "301:0",
+                "302:0",
+                "303:0",
+                "372:0",
+                "374:0",
+                "378:0"
+            ],
+            "signatures": [
+                [
+                    "100:0",
+                    "forward",
+                    80,
+                    75
+                ],
+                [
+                    "412:0",
+                    "backward",
+                    75,
+                    66
+                ],
+                [
+                    "83:0",
+                    "backward",
+                    66,
+                    58
+                ],
+                [
+                    "75:0",
+                    "backward",
+                    58,
+                    57
+                ],
+                [
+                    "483:0",
+                    "backward",
+                    57,
+                    38
+                ],
+                [
+                    "50:0",
+                    "forward",
+                    38,
+                    33
+                ],
+                [
+                    "242:0",
+                    "forward",
+                    33,
+                    185
+                ],
+                [
+                    "262:0",
+                    "forward",
+                    185,
+                    201
+                ],
+                [
+                    "562:0",
+                    "backward",
+                    201,
+                    398
+                ],
+                [
+                    "563:0",
+                    "forward",
+                    398,
+                    377
+                ],
+                [
+                    "532:0",
+                    "backward",
+                    377,
+                    376
+                ],
+                [
+                    "530:0",
+                    "backward",
+                    376,
+                    375
+                ],
+                [
+                    "529:0",
+                    "backward",
+                    375,
+                    370
+                ],
+                [
+                    "523:0",
+                    "backward",
+                    370,
+                    195
+                ],
+                [
+                    "257:0",
+                    "backward",
+                    195,
+                    194
+                ],
+                [
+                    "256:0",
+                    "backward",
+                    194,
+                    193
+                ],
+                [
+                    "517:0",
+                    "backward",
+                    193,
+                    192
+                ],
+                [
+                    "282:0",
+                    "backward",
+                    192,
+                    221
+                ],
+                [
+                    "283:0",
+                    "forward",
+                    221,
+                    222
+                ],
+                [
+                    "370:0",
+                    "backward",
+                    222,
+                    291
+                ],
+                [
+                    "567:0",
+                    "forward",
+                    291,
+                    288
+                ],
+                [
+                    "367:0",
+                    "backward",
+                    288,
+                    287
+                ],
+                [
+                    "371:0",
+                    "forward",
+                    287,
+                    238
+                ],
+                [
+                    "301:0",
+                    "forward",
+                    238,
+                    239
+                ],
+                [
+                    "302:0",
+                    "forward",
+                    239,
+                    240
+                ],
+                [
+                    "303:0",
+                    "forward",
+                    240,
+                    241
+                ],
+                [
+                    "372:0",
+                    "forward",
+                    241,
+                    292
+                ],
+                [
+                    "374:0",
+                    "forward",
+                    292,
+                    294
+                ],
+                [
+                    "378:0",
+                    "backward",
+                    294,
+                    297
+                ]
+            ],
+            "route_edges": [
+                {
+                    "segment_id": "100:0",
+                    "orig_feature_id": 100,
+                    "direction": "forward",
+                    "length": 24.489,
+                    "dynwd": 1.658,
+                    "cost": 41.199,
+                    "source_node": 80,
+                    "target_node": 75,
+                    "edge_idx": 198
+                },
+                {
+                    "segment_id": "412:0",
+                    "orig_feature_id": 412,
+                    "direction": "backward",
+                    "length": 183.181,
+                    "dynwd": 2.47,
+                    "cost": 195.83100000000002,
+                    "source_node": 75,
+                    "target_node": 66,
+                    "edge_idx": 751
+                },
+                {
+                    "segment_id": "83:0",
+                    "orig_feature_id": 83,
+                    "direction": "backward",
+                    "length": 38.036,
+                    "dynwd": 1.758,
+                    "cost": 54.246,
+                    "source_node": 66,
+                    "target_node": 58,
+                    "edge_idx": 165
+                },
+                {
+                    "segment_id": "75:0",
+                    "orig_feature_id": 75,
+                    "direction": "backward",
+                    "length": 243.342,
+                    "dynwd": 2.45,
+                    "cost": 256.092,
+                    "source_node": 58,
+                    "target_node": 57,
+                    "edge_idx": 149
+                },
+                {
+                    "segment_id": "483:0",
+                    "orig_feature_id": 483,
+                    "direction": "backward",
+                    "length": 252.092,
+                    "dynwd": 2.26,
+                    "cost": 265.79200000000003,
+                    "source_node": 57,
+                    "target_node": 38,
+                    "edge_idx": 885
+                },
+                {
+                    "segment_id": "50:0",
+                    "orig_feature_id": 50,
+                    "direction": "forward",
+                    "length": 32.566,
+                    "dynwd": 1.658,
+                    "cost": 49.276,
+                    "source_node": 38,
+                    "target_node": 33,
+                    "edge_idx": 98
+                },
+                {
+                    "segment_id": "242:0",
+                    "orig_feature_id": 242,
+                    "direction": "forward",
+                    "length": 47.196,
+                    "dynwd": 2.233,
+                    "cost": 61.031,
+                    "source_node": 33,
+                    "target_node": 185,
+                    "edge_idx": 436
+                },
+                {
+                    "segment_id": "262:0",
+                    "orig_feature_id": 262,
+                    "direction": "forward",
+                    "length": 30.452,
+                    "dynwd": 1.554,
+                    "cost": 47.682,
+                    "source_node": 185,
+                    "target_node": 201,
+                    "edge_idx": 474
+                },
+                {
+                    "segment_id": "562:0",
+                    "orig_feature_id": 562,
+                    "direction": "backward",
+                    "length": 45.198,
+                    "dynwd": 2.149,
+                    "cost": 59.453,
+                    "source_node": 201,
+                    "target_node": 398,
+                    "edge_idx": 1049
+                },
+                {
+                    "segment_id": "563:0",
+                    "orig_feature_id": 563,
+                    "direction": "forward",
+                    "length": 161.561,
+                    "dynwd": 2.205,
+                    "cost": 175.536,
+                    "source_node": 398,
+                    "target_node": 377,
+                    "edge_idx": 1050
+                },
+                {
+                    "segment_id": "532:0",
+                    "orig_feature_id": 532,
+                    "direction": "backward",
+                    "length": 107.533,
+                    "dynwd": 1.987,
+                    "cost": 122.598,
+                    "source_node": 377,
+                    "target_node": 376,
+                    "edge_idx": 989
+                },
+                {
+                    "segment_id": "530:0",
+                    "orig_feature_id": 530,
+                    "direction": "backward",
+                    "length": 48.702,
+                    "dynwd": 2.009,
+                    "cost": 63.657,
+                    "source_node": 376,
+                    "target_node": 375,
+                    "edge_idx": 985
+                },
+                {
+                    "segment_id": "529:0",
+                    "orig_feature_id": 529,
+                    "direction": "backward",
+                    "length": 75.036,
+                    "dynwd": 2.043,
+                    "cost": 89.821,
+                    "source_node": 375,
+                    "target_node": 370,
+                    "edge_idx": 983
+                },
+                {
+                    "segment_id": "523:0",
+                    "orig_feature_id": 523,
+                    "direction": "backward",
+                    "length": 28.472,
+                    "dynwd": 2.105,
+                    "cost": 42.947,
+                    "source_node": 370,
+                    "target_node": 195,
+                    "edge_idx": 971
+                },
+                {
+                    "segment_id": "257:0",
+                    "orig_feature_id": 257,
+                    "direction": "backward",
+                    "length": 25.523,
+                    "dynwd": 2.209,
+                    "cost": 39.478,
+                    "source_node": 195,
+                    "target_node": 194,
+                    "edge_idx": 465
+                },
+                {
+                    "segment_id": "256:0",
+                    "orig_feature_id": 256,
+                    "direction": "backward",
+                    "length": 8.352,
+                    "dynwd": 1.446,
+                    "cost": 26.122000000000003,
+                    "source_node": 194,
+                    "target_node": 193,
+                    "edge_idx": 463
+                },
+                {
+                    "segment_id": "517:0",
+                    "orig_feature_id": 517,
+                    "direction": "backward",
+                    "length": 205.173,
+                    "dynwd": 2.215,
+                    "cost": 219.098,
+                    "source_node": 193,
+                    "target_node": 192,
+                    "edge_idx": 955
+                },
+                {
+                    "segment_id": "282:0",
+                    "orig_feature_id": 282,
+                    "direction": "backward",
+                    "length": 23.43,
+                    "dynwd": 1.596,
+                    "cost": 40.45,
+                    "source_node": 192,
+                    "target_node": 221,
+                    "edge_idx": 515
+                },
+                {
+                    "segment_id": "283:0",
+                    "orig_feature_id": 283,
+                    "direction": "forward",
+                    "length": 21.162,
+                    "dynwd": 1.232,
+                    "cost": 40.001999999999995,
+                    "source_node": 221,
+                    "target_node": 222,
+                    "edge_idx": 516
+                },
+                {
+                    "segment_id": "370:0",
+                    "orig_feature_id": 370,
+                    "direction": "backward",
+                    "length": 84.627,
+                    "dynwd": 1.433,
+                    "cost": 102.46199999999999,
+                    "source_node": 222,
+                    "target_node": 291,
+                    "edge_idx": 667
+                },
+                {
+                    "segment_id": "567:0",
+                    "orig_feature_id": 567,
+                    "direction": "forward",
+                    "length": 7.993,
+                    "dynwd": 1.274,
+                    "cost": 26.622999999999998,
+                    "source_node": 291,
+                    "target_node": 288,
+                    "edge_idx": 1058
+                },
+                {
+                    "segment_id": "367:0",
+                    "orig_feature_id": 367,
+                    "direction": "backward",
+                    "length": 20.253,
+                    "dynwd": 1.669,
+                    "cost": 36.908,
+                    "source_node": 288,
+                    "target_node": 287,
+                    "edge_idx": 661
+                },
+                {
+                    "segment_id": "371:0",
+                    "orig_feature_id": 371,
+                    "direction": "forward",
+                    "length": 23.634,
+                    "dynwd": 1.164,
+                    "cost": 42.814,
+                    "source_node": 287,
+                    "target_node": 238,
+                    "edge_idx": 668
+                },
+                {
+                    "segment_id": "301:0",
+                    "orig_feature_id": 301,
+                    "direction": "forward",
+                    "length": 10.866,
+                    "dynwd": 2.296,
+                    "cost": 24.386000000000003,
+                    "source_node": 238,
+                    "target_node": 239,
+                    "edge_idx": 552
+                },
+                {
+                    "segment_id": "302:0",
+                    "orig_feature_id": 302,
+                    "direction": "forward",
+                    "length": 5.895,
+                    "dynwd": 1.619,
+                    "cost": 22.8,
+                    "source_node": 239,
+                    "target_node": 240,
+                    "edge_idx": 554
+                },
+                {
+                    "segment_id": "303:0",
+                    "orig_feature_id": 303,
+                    "direction": "forward",
+                    "length": 15.033,
+                    "dynwd": 2.184,
+                    "cost": 29.113,
+                    "source_node": 240,
+                    "target_node": 241,
+                    "edge_idx": 556
+                },
+                {
+                    "segment_id": "372:0",
+                    "orig_feature_id": 372,
+                    "direction": "forward",
+                    "length": 19.891,
+                    "dynwd": 1.235,
+                    "cost": 38.715999999999994,
+                    "source_node": 241,
+                    "target_node": 292,
+                    "edge_idx": 670
+                },
+                {
+                    "segment_id": "374:0",
+                    "orig_feature_id": 374,
+                    "direction": "forward",
+                    "length": 45.207,
+                    "dynwd": 1.897,
+                    "cost": 60.722,
+                    "source_node": 292,
+                    "target_node": 294,
+                    "edge_idx": 674
+                },
+                {
+                    "segment_id": "378:0",
+                    "orig_feature_id": 378,
+                    "direction": "backward",
+                    "length": 30.037,
+                    "dynwd": 2.015,
+                    "cost": 44.961999999999996,
+                    "source_node": 294,
+                    "target_node": 297,
+                    "edge_idx": 683
+                }
+            ],
+            "path_index": 2,
+            "selected_edge_count": 29,
+            "invalid_selected_edges_count": 0
+        }
+    ],
+    "baseline_penalty_heuristic": {
+        "method": "kMDNSP-inspired penalty shortest-path heuristic",
+        "k_paths_requested": 2,
+        "k_paths_found": 2,
+        "theta_initial": 0.5,
+        "theta_used": 0.5,
+        "epsilon_near_shortest": 0.2,
+        "complete_result": false,
+        "near_shortest_cost_limit": 2559.976671470941,
+        "paths": [
+            {
+                "path_label": "baseline_path_1",
+                "route_found": true,
+                "edge_count": 26,
+                "node_count": 27,
+                "route_length": 1765.743892892451,
+                "route_cost": 2133.313892892451,
+                "route_average_walkability": 2.172538461538461,
+                "is_simple_path": true,
+                "overlap_weight_field": "cost",
+                "route_weight_for_overlap": 2133.313892892451,
+                "segment_ids": [
+                    "414:0",
+                    "87:0",
+                    "88:0",
+                    "91:0",
+                    "90:0",
+                    "82:0",
+                    "191:0",
+                    "229:1",
+                    "229:0",
+                    "228:0",
+                    "192:0",
+                    "493:0",
+                    "34:0",
+                    "37:0",
+                    "253:0",
+                    "254:0",
+                    "255:0",
+                    "284:0",
+                    "299:0",
+                    "300:0",
+                    "301:0",
+                    "302:0",
+                    "303:0",
+                    "372:0",
+                    "376:0",
+                    "377:0"
+                ],
+                "signatures": [
+                    [
+                        "414:0",
+                        "backward",
+                        80,
+                        69
+                    ],
+                    [
+                        "87:0",
+                        "backward",
+                        69,
+                        68
+                    ],
+                    [
+                        "88:0",
+                        "forward",
+                        68,
+                        70
+                    ],
+                    [
+                        "91:0",
+                        "backward",
+                        70,
+                        71
+                    ],
+                    [
+                        "90:0",
+                        "backward",
+                        71,
+                        64
+                    ],
+                    [
+                        "82:0",
+                        "forward",
+                        64,
+                        65
+                    ],
+                    [
+                        "191:0",
+                        "forward",
+                        65,
+                        141
+                    ],
+                    [
+                        "229:1",
+                        "forward",
+                        141,
+                        172
+                    ],
+                    [
+                        "229:0",
+                        "forward",
+                        172,
+                        171
+                    ],
+                    [
+                        "228:0",
+                        "forward",
+                        171,
+                        143
+                    ],
+                    [
+                        "192:0",
+                        "forward",
+                        143,
+                        144
+                    ],
+                    [
+                        "493:0",
+                        "forward",
+                        144,
+                        23
+                    ],
+                    [
+                        "34:0",
+                        "forward",
+                        23,
+                        24
+                    ],
+                    [
+                        "37:0",
+                        "forward",
+                        24,
+                        26
+                    ],
+                    [
+                        "253:0",
+                        "forward",
+                        26,
+                        190
+                    ],
+                    [
+                        "254:0",
+                        "forward",
+                        190,
+                        191
+                    ],
+                    [
+                        "255:0",
+                        "forward",
+                        191,
+                        192
+                    ],
+                    [
+                        "284:0",
+                        "forward",
+                        192,
+                        223
+                    ],
+                    [
+                        "299:0",
+                        "forward",
+                        223,
+                        237
+                    ],
+                    [
+                        "300:0",
+                        "forward",
+                        237,
+                        238
+                    ],
+                    [
+                        "301:0",
+                        "forward",
+                        238,
+                        239
+                    ],
+                    [
+                        "302:0",
+                        "forward",
+                        239,
+                        240
+                    ],
+                    [
+                        "303:0",
+                        "forward",
+                        240,
+                        241
+                    ],
+                    [
+                        "372:0",
+                        "forward",
+                        241,
+                        292
+                    ],
+                    [
+                        "376:0",
+                        "forward",
+                        292,
+                        296
+                    ],
+                    [
+                        "377:0",
+                        "forward",
+                        296,
+                        297
+                    ]
+                ],
+                "route_edges": [
+                    {
+                        "segment_id": "414:0",
+                        "orig_feature_id": 414,
+                        "direction": "backward",
+                        "length": 98.757,
+                        "dynwd": 2.744,
+                        "cost": 110.037,
+                        "source_node": 80,
+                        "target_node": 69,
+                        "edge_idx": 753
+                    },
+                    {
+                        "segment_id": "87:0",
+                        "orig_feature_id": 87,
+                        "direction": "backward",
+                        "length": 82.145,
+                        "dynwd": 2.744,
+                        "cost": 93.425,
+                        "source_node": 69,
+                        "target_node": 68,
+                        "edge_idx": 173
+                    },
+                    {
+                        "segment_id": "88:0",
+                        "orig_feature_id": 88,
+                        "direction": "forward",
+                        "length": 153.106,
+                        "dynwd": 2.338,
+                        "cost": 166.416,
+                        "source_node": 68,
+                        "target_node": 70,
+                        "edge_idx": 174
+                    },
+                    {
+                        "segment_id": "91:0",
+                        "orig_feature_id": 91,
+                        "direction": "backward",
+                        "length": 20.232,
+                        "dynwd": 1.677,
+                        "cost": 36.846999999999994,
+                        "source_node": 70,
+                        "target_node": 71,
+                        "edge_idx": 181
+                    },
+                    {
+                        "segment_id": "90:0",
+                        "orig_feature_id": 90,
+                        "direction": "backward",
+                        "length": 35.895,
+                        "dynwd": 1.758,
+                        "cost": 52.105000000000004,
+                        "source_node": 71,
+                        "target_node": 64,
+                        "edge_idx": 179
+                    },
+                    {
+                        "segment_id": "82:0",
+                        "orig_feature_id": 82,
+                        "direction": "forward",
+                        "length": 186.942,
+                        "dynwd": 2.604,
+                        "cost": 198.922,
+                        "source_node": 64,
+                        "target_node": 65,
+                        "edge_idx": 162
+                    },
+                    {
+                        "segment_id": "191:0",
+                        "orig_feature_id": 191,
+                        "direction": "forward",
+                        "length": 154.44,
+                        "dynwd": 2.52,
+                        "cost": 166.84,
+                        "source_node": 65,
+                        "target_node": 141,
+                        "edge_idx": 340
+                    },
+                    {
+                        "segment_id": "229:1",
+                        "orig_feature_id": 229,
+                        "direction": "forward",
+                        "length": 89.15532276014177,
+                        "dynwd": 2.415,
+                        "cost": 102.08032276014177,
+                        "source_node": 141,
+                        "target_node": 172,
+                        "edge_idx": 414
+                    },
+                    {
+                        "segment_id": "229:0",
+                        "orig_feature_id": 229,
+                        "direction": "forward",
+                        "length": 8.029570132309429,
+                        "dynwd": 2.415,
+                        "cost": 20.954570132309428,
+                        "source_node": 172,
+                        "target_node": 171,
+                        "edge_idx": 412
+                    },
+                    {
+                        "segment_id": "228:0",
+                        "orig_feature_id": 228,
+                        "direction": "forward",
+                        "length": 10.355,
+                        "dynwd": 1.819,
+                        "cost": 26.26,
+                        "source_node": 171,
+                        "target_node": 143,
+                        "edge_idx": 410
+                    },
+                    {
+                        "segment_id": "192:0",
+                        "orig_feature_id": 192,
+                        "direction": "forward",
+                        "length": 133.229,
+                        "dynwd": 2.321,
+                        "cost": 146.62400000000002,
+                        "source_node": 143,
+                        "target_node": 144,
+                        "edge_idx": 342
+                    },
+                    {
+                        "segment_id": "493:0",
+                        "orig_feature_id": 493,
+                        "direction": "forward",
+                        "length": 100.687,
+                        "dynwd": 2.421,
+                        "cost": 113.582,
+                        "source_node": 144,
+                        "target_node": 23,
+                        "edge_idx": 904
+                    },
+                    {
+                        "segment_id": "34:0",
+                        "orig_feature_id": 34,
+                        "direction": "forward",
+                        "length": 19.635,
+                        "dynwd": 1.758,
+                        "cost": 35.845,
+                        "source_node": 23,
+                        "target_node": 24,
+                        "edge_idx": 66
+                    },
+                    {
+                        "segment_id": "37:0",
+                        "orig_feature_id": 37,
+                        "direction": "forward",
+                        "length": 96.309,
+                        "dynwd": 2.404,
+                        "cost": 109.289,
+                        "source_node": 24,
+                        "target_node": 26,
+                        "edge_idx": 72
+                    },
+                    {
+                        "segment_id": "253:0",
+                        "orig_feature_id": 253,
+                        "direction": "forward",
+                        "length": 36.562,
+                        "dynwd": 2.416,
+                        "cost": 49.482,
+                        "source_node": 26,
+                        "target_node": 190,
+                        "edge_idx": 456
+                    },
+                    {
+                        "segment_id": "254:0",
+                        "orig_feature_id": 254,
+                        "direction": "forward",
+                        "length": 177.491,
+                        "dynwd": 2.416,
+                        "cost": 190.411,
+                        "source_node": 190,
+                        "target_node": 191,
+                        "edge_idx": 458
+                    },
+                    {
+                        "segment_id": "255:0",
+                        "orig_feature_id": 255,
+                        "direction": "forward",
+                        "length": 104.375,
+                        "dynwd": 2.416,
+                        "cost": 117.295,
+                        "source_node": 191,
+                        "target_node": 192,
+                        "edge_idx": 460
+                    },
+                    {
+                        "segment_id": "284:0",
+                        "orig_feature_id": 284,
+                        "direction": "forward",
+                        "length": 20.853,
+                        "dynwd": 1.702,
+                        "cost": 37.343,
+                        "source_node": 192,
+                        "target_node": 223,
+                        "edge_idx": 518
+                    },
+                    {
+                        "segment_id": "299:0",
+                        "orig_feature_id": 299,
+                        "direction": "forward",
+                        "length": 91.387,
+                        "dynwd": 2.112,
+                        "cost": 105.827,
+                        "source_node": 223,
+                        "target_node": 237,
+                        "edge_idx": 548
+                    },
+                    {
+                        "segment_id": "300:0",
+                        "orig_feature_id": 300,
+                        "direction": "forward",
+                        "length": 19.552,
+                        "dynwd": 2.296,
+                        "cost": 33.072,
+                        "source_node": 237,
+                        "target_node": 238,
+                        "edge_idx": 550
+                    },
+                    {
+                        "segment_id": "301:0",
+                        "orig_feature_id": 301,
+                        "direction": "forward",
+                        "length": 10.866,
+                        "dynwd": 2.296,
+                        "cost": 24.386000000000003,
+                        "source_node": 238,
+                        "target_node": 239,
+                        "edge_idx": 552
+                    },
+                    {
+                        "segment_id": "302:0",
+                        "orig_feature_id": 302,
+                        "direction": "forward",
+                        "length": 5.895,
+                        "dynwd": 1.619,
+                        "cost": 22.8,
+                        "source_node": 239,
+                        "target_node": 240,
+                        "edge_idx": 554
+                    },
+                    {
+                        "segment_id": "303:0",
+                        "orig_feature_id": 303,
+                        "direction": "forward",
+                        "length": 15.033,
+                        "dynwd": 2.184,
+                        "cost": 29.113,
+                        "source_node": 240,
+                        "target_node": 241,
+                        "edge_idx": 556
+                    },
+                    {
+                        "segment_id": "372:0",
+                        "orig_feature_id": 372,
+                        "direction": "forward",
+                        "length": 19.891,
+                        "dynwd": 1.235,
+                        "cost": 38.715999999999994,
+                        "source_node": 241,
+                        "target_node": 292,
+                        "edge_idx": 670
+                    },
+                    {
+                        "segment_id": "376:0",
+                        "orig_feature_id": 376,
+                        "direction": "forward",
+                        "length": 42.498,
+                        "dynwd": 2.009,
+                        "cost": 57.452999999999996,
+                        "source_node": 292,
+                        "target_node": 296,
+                        "edge_idx": 678
+                    },
+                    {
+                        "segment_id": "377:0",
+                        "orig_feature_id": 377,
+                        "direction": "forward",
+                        "length": 32.424,
+                        "dynwd": 1.847,
+                        "cost": 48.189,
+                        "source_node": 296,
+                        "target_node": 297,
+                        "edge_idx": 680
+                    }
+                ]
+            },
+            {
+                "path_label": "baseline_path_2",
+                "route_found": true,
+                "edge_count": 29,
+                "node_count": 30,
+                "route_length": 1864.932,
+                "route_cost": 2319.8169999999996,
+                "route_average_walkability": 1.8628620689655173,
+                "is_simple_path": true,
+                "overlap_weight_field": "cost",
+                "route_weight_for_overlap": 2319.8169999999996,
+                "segment_ids": [
+                    "100:0",
+                    "412:0",
+                    "83:0",
+                    "75:0",
+                    "483:0",
+                    "50:0",
+                    "242:0",
+                    "262:0",
+                    "562:0",
+                    "563:0",
+                    "532:0",
+                    "530:0",
+                    "529:0",
+                    "523:0",
+                    "257:0",
+                    "256:0",
+                    "517:0",
+                    "282:0",
+                    "283:0",
+                    "370:0",
+                    "567:0",
+                    "367:0",
+                    "371:0",
+                    "301:0",
+                    "302:0",
+                    "303:0",
+                    "372:0",
+                    "374:0",
+                    "378:0"
+                ],
+                "signatures": [
+                    [
+                        "100:0",
+                        "forward",
+                        80,
+                        75
+                    ],
+                    [
+                        "412:0",
+                        "backward",
+                        75,
+                        66
+                    ],
+                    [
+                        "83:0",
+                        "backward",
+                        66,
+                        58
+                    ],
+                    [
+                        "75:0",
+                        "backward",
+                        58,
+                        57
+                    ],
+                    [
+                        "483:0",
+                        "backward",
+                        57,
+                        38
+                    ],
+                    [
+                        "50:0",
+                        "forward",
+                        38,
+                        33
+                    ],
+                    [
+                        "242:0",
+                        "forward",
+                        33,
+                        185
+                    ],
+                    [
+                        "262:0",
+                        "forward",
+                        185,
+                        201
+                    ],
+                    [
+                        "562:0",
+                        "backward",
+                        201,
+                        398
+                    ],
+                    [
+                        "563:0",
+                        "forward",
+                        398,
+                        377
+                    ],
+                    [
+                        "532:0",
+                        "backward",
+                        377,
+                        376
+                    ],
+                    [
+                        "530:0",
+                        "backward",
+                        376,
+                        375
+                    ],
+                    [
+                        "529:0",
+                        "backward",
+                        375,
+                        370
+                    ],
+                    [
+                        "523:0",
+                        "backward",
+                        370,
+                        195
+                    ],
+                    [
+                        "257:0",
+                        "backward",
+                        195,
+                        194
+                    ],
+                    [
+                        "256:0",
+                        "backward",
+                        194,
+                        193
+                    ],
+                    [
+                        "517:0",
+                        "backward",
+                        193,
+                        192
+                    ],
+                    [
+                        "282:0",
+                        "backward",
+                        192,
+                        221
+                    ],
+                    [
+                        "283:0",
+                        "forward",
+                        221,
+                        222
+                    ],
+                    [
+                        "370:0",
+                        "backward",
+                        222,
+                        291
+                    ],
+                    [
+                        "567:0",
+                        "forward",
+                        291,
+                        288
+                    ],
+                    [
+                        "367:0",
+                        "backward",
+                        288,
+                        287
+                    ],
+                    [
+                        "371:0",
+                        "forward",
+                        287,
+                        238
+                    ],
+                    [
+                        "301:0",
+                        "forward",
+                        238,
+                        239
+                    ],
+                    [
+                        "302:0",
+                        "forward",
+                        239,
+                        240
+                    ],
+                    [
+                        "303:0",
+                        "forward",
+                        240,
+                        241
+                    ],
+                    [
+                        "372:0",
+                        "forward",
+                        241,
+                        292
+                    ],
+                    [
+                        "374:0",
+                        "forward",
+                        292,
+                        294
+                    ],
+                    [
+                        "378:0",
+                        "backward",
+                        294,
+                        297
+                    ]
+                ],
+                "route_edges": [
+                    {
+                        "segment_id": "100:0",
+                        "orig_feature_id": 100,
+                        "direction": "forward",
+                        "length": 24.489,
+                        "dynwd": 1.658,
+                        "cost": 41.199,
+                        "source_node": 80,
+                        "target_node": 75,
+                        "edge_idx": 198,
+                        "penalized_cost": 41.199
+                    },
+                    {
+                        "segment_id": "412:0",
+                        "orig_feature_id": 412,
+                        "direction": "backward",
+                        "length": 183.181,
+                        "dynwd": 2.47,
+                        "cost": 195.83100000000002,
+                        "source_node": 75,
+                        "target_node": 66,
+                        "edge_idx": 751,
+                        "penalized_cost": 195.83100000000002
+                    },
+                    {
+                        "segment_id": "83:0",
+                        "orig_feature_id": 83,
+                        "direction": "backward",
+                        "length": 38.036,
+                        "dynwd": 1.758,
+                        "cost": 54.246,
+                        "source_node": 66,
+                        "target_node": 58,
+                        "edge_idx": 165,
+                        "penalized_cost": 54.246
+                    },
+                    {
+                        "segment_id": "75:0",
+                        "orig_feature_id": 75,
+                        "direction": "backward",
+                        "length": 243.342,
+                        "dynwd": 2.45,
+                        "cost": 256.092,
+                        "source_node": 58,
+                        "target_node": 57,
+                        "edge_idx": 149,
+                        "penalized_cost": 256.092
+                    },
+                    {
+                        "segment_id": "483:0",
+                        "orig_feature_id": 483,
+                        "direction": "backward",
+                        "length": 252.092,
+                        "dynwd": 2.26,
+                        "cost": 265.79200000000003,
+                        "source_node": 57,
+                        "target_node": 38,
+                        "edge_idx": 885,
+                        "penalized_cost": 265.79200000000003
+                    },
+                    {
+                        "segment_id": "50:0",
+                        "orig_feature_id": 50,
+                        "direction": "forward",
+                        "length": 32.566,
+                        "dynwd": 1.658,
+                        "cost": 49.276,
+                        "source_node": 38,
+                        "target_node": 33,
+                        "edge_idx": 98,
+                        "penalized_cost": 49.276
+                    },
+                    {
+                        "segment_id": "242:0",
+                        "orig_feature_id": 242,
+                        "direction": "forward",
+                        "length": 47.196,
+                        "dynwd": 2.233,
+                        "cost": 61.031,
+                        "source_node": 33,
+                        "target_node": 185,
+                        "edge_idx": 436,
+                        "penalized_cost": 61.031
+                    },
+                    {
+                        "segment_id": "262:0",
+                        "orig_feature_id": 262,
+                        "direction": "forward",
+                        "length": 30.452,
+                        "dynwd": 1.554,
+                        "cost": 47.682,
+                        "source_node": 185,
+                        "target_node": 201,
+                        "edge_idx": 474,
+                        "penalized_cost": 47.682
+                    },
+                    {
+                        "segment_id": "562:0",
+                        "orig_feature_id": 562,
+                        "direction": "backward",
+                        "length": 45.198,
+                        "dynwd": 2.149,
+                        "cost": 59.453,
+                        "source_node": 201,
+                        "target_node": 398,
+                        "edge_idx": 1049,
+                        "penalized_cost": 59.453
+                    },
+                    {
+                        "segment_id": "563:0",
+                        "orig_feature_id": 563,
+                        "direction": "forward",
+                        "length": 161.561,
+                        "dynwd": 2.205,
+                        "cost": 175.536,
+                        "source_node": 398,
+                        "target_node": 377,
+                        "edge_idx": 1050,
+                        "penalized_cost": 175.536
+                    },
+                    {
+                        "segment_id": "532:0",
+                        "orig_feature_id": 532,
+                        "direction": "backward",
+                        "length": 107.533,
+                        "dynwd": 1.987,
+                        "cost": 122.598,
+                        "source_node": 377,
+                        "target_node": 376,
+                        "edge_idx": 989,
+                        "penalized_cost": 122.598
+                    },
+                    {
+                        "segment_id": "530:0",
+                        "orig_feature_id": 530,
+                        "direction": "backward",
+                        "length": 48.702,
+                        "dynwd": 2.009,
+                        "cost": 63.657,
+                        "source_node": 376,
+                        "target_node": 375,
+                        "edge_idx": 985,
+                        "penalized_cost": 63.657
+                    },
+                    {
+                        "segment_id": "529:0",
+                        "orig_feature_id": 529,
+                        "direction": "backward",
+                        "length": 75.036,
+                        "dynwd": 2.043,
+                        "cost": 89.821,
+                        "source_node": 375,
+                        "target_node": 370,
+                        "edge_idx": 983,
+                        "penalized_cost": 89.821
+                    },
+                    {
+                        "segment_id": "523:0",
+                        "orig_feature_id": 523,
+                        "direction": "backward",
+                        "length": 28.472,
+                        "dynwd": 2.105,
+                        "cost": 42.947,
+                        "source_node": 370,
+                        "target_node": 195,
+                        "edge_idx": 971,
+                        "penalized_cost": 42.947
+                    },
+                    {
+                        "segment_id": "257:0",
+                        "orig_feature_id": 257,
+                        "direction": "backward",
+                        "length": 25.523,
+                        "dynwd": 2.209,
+                        "cost": 39.478,
+                        "source_node": 195,
+                        "target_node": 194,
+                        "edge_idx": 465,
+                        "penalized_cost": 39.478
+                    },
+                    {
+                        "segment_id": "256:0",
+                        "orig_feature_id": 256,
+                        "direction": "backward",
+                        "length": 8.352,
+                        "dynwd": 1.446,
+                        "cost": 26.122000000000003,
+                        "source_node": 194,
+                        "target_node": 193,
+                        "edge_idx": 463,
+                        "penalized_cost": 26.122000000000003
+                    },
+                    {
+                        "segment_id": "517:0",
+                        "orig_feature_id": 517,
+                        "direction": "backward",
+                        "length": 205.173,
+                        "dynwd": 2.215,
+                        "cost": 219.098,
+                        "source_node": 193,
+                        "target_node": 192,
+                        "edge_idx": 955,
+                        "penalized_cost": 219.098
+                    },
+                    {
+                        "segment_id": "282:0",
+                        "orig_feature_id": 282,
+                        "direction": "backward",
+                        "length": 23.43,
+                        "dynwd": 1.596,
+                        "cost": 40.45,
+                        "source_node": 192,
+                        "target_node": 221,
+                        "edge_idx": 515,
+                        "penalized_cost": 40.45
+                    },
+                    {
+                        "segment_id": "283:0",
+                        "orig_feature_id": 283,
+                        "direction": "forward",
+                        "length": 21.162,
+                        "dynwd": 1.232,
+                        "cost": 40.001999999999995,
+                        "source_node": 221,
+                        "target_node": 222,
+                        "edge_idx": 516,
+                        "penalized_cost": 40.001999999999995
+                    },
+                    {
+                        "segment_id": "370:0",
+                        "orig_feature_id": 370,
+                        "direction": "backward",
+                        "length": 84.627,
+                        "dynwd": 1.433,
+                        "cost": 102.46199999999999,
+                        "source_node": 222,
+                        "target_node": 291,
+                        "edge_idx": 667,
+                        "penalized_cost": 102.46199999999999
+                    },
+                    {
+                        "segment_id": "567:0",
+                        "orig_feature_id": 567,
+                        "direction": "forward",
+                        "length": 7.993,
+                        "dynwd": 1.274,
+                        "cost": 26.622999999999998,
+                        "source_node": 291,
+                        "target_node": 288,
+                        "edge_idx": 1058,
+                        "penalized_cost": 26.622999999999998
+                    },
+                    {
+                        "segment_id": "367:0",
+                        "orig_feature_id": 367,
+                        "direction": "backward",
+                        "length": 20.253,
+                        "dynwd": 1.669,
+                        "cost": 36.908,
+                        "source_node": 288,
+                        "target_node": 287,
+                        "edge_idx": 661,
+                        "penalized_cost": 36.908
+                    },
+                    {
+                        "segment_id": "371:0",
+                        "orig_feature_id": 371,
+                        "direction": "forward",
+                        "length": 23.634,
+                        "dynwd": 1.164,
+                        "cost": 42.814,
+                        "source_node": 287,
+                        "target_node": 238,
+                        "edge_idx": 668,
+                        "penalized_cost": 42.814
+                    },
+                    {
+                        "segment_id": "301:0",
+                        "orig_feature_id": 301,
+                        "direction": "forward",
+                        "length": 10.866,
+                        "dynwd": 2.296,
+                        "cost": 24.386000000000003,
+                        "source_node": 238,
+                        "target_node": 239,
+                        "edge_idx": 552,
+                        "penalized_cost": 48.772000000000006
+                    },
+                    {
+                        "segment_id": "302:0",
+                        "orig_feature_id": 302,
+                        "direction": "forward",
+                        "length": 5.895,
+                        "dynwd": 1.619,
+                        "cost": 22.8,
+                        "source_node": 239,
+                        "target_node": 240,
+                        "edge_idx": 554,
+                        "penalized_cost": 45.6
+                    },
+                    {
+                        "segment_id": "303:0",
+                        "orig_feature_id": 303,
+                        "direction": "forward",
+                        "length": 15.033,
+                        "dynwd": 2.184,
+                        "cost": 29.113,
+                        "source_node": 240,
+                        "target_node": 241,
+                        "edge_idx": 556,
+                        "penalized_cost": 58.226
+                    },
+                    {
+                        "segment_id": "372:0",
+                        "orig_feature_id": 372,
+                        "direction": "forward",
+                        "length": 19.891,
+                        "dynwd": 1.235,
+                        "cost": 38.715999999999994,
+                        "source_node": 241,
+                        "target_node": 292,
+                        "edge_idx": 670,
+                        "penalized_cost": 77.43199999999999
+                    },
+                    {
+                        "segment_id": "374:0",
+                        "orig_feature_id": 374,
+                        "direction": "forward",
+                        "length": 45.207,
+                        "dynwd": 1.897,
+                        "cost": 60.722,
+                        "source_node": 292,
+                        "target_node": 294,
+                        "edge_idx": 674,
+                        "penalized_cost": 60.722
+                    },
+                    {
+                        "segment_id": "378:0",
+                        "orig_feature_id": 378,
+                        "direction": "backward",
+                        "length": 30.037,
+                        "dynwd": 2.015,
+                        "cost": 44.961999999999996,
+                        "source_node": 294,
+                        "target_node": 297,
+                        "edge_idx": 683,
+                        "penalized_cost": 44.961999999999996
+                    }
+                ]
+            }
+        ],
+        "pairwise_similarity": [
+            {
+                "path_i": 1,
+                "path_j": 2,
+                "similarity": 0.05391377255039438,
+                "theta_used": 0.5,
+                "within_threshold": true
+            }
+        ],
+        "round_log": [
+            {
+                "penalty_factor": 2.0,
+                "magnitude": 0,
+                "candidate_cost": 2319.8169999999996,
+                "candidate_length": 1864.932,
+                "candidate_max_similarity": 0.05391377255039438,
+                "accepted": true
+            }
+        ],
+        "candidate_pool_size": 2,
+        "route_found": true,
+        "route_edges": [
+            {
+                "segment_id": "414:0",
+                "orig_feature_id": 414,
+                "direction": "backward",
+                "length": 98.757,
+                "dynwd": 2.744,
+                "cost": 110.037,
+                "source_node": 80,
+                "target_node": 69,
+                "edge_idx": 753
+            },
+            {
+                "segment_id": "87:0",
+                "orig_feature_id": 87,
+                "direction": "backward",
+                "length": 82.145,
+                "dynwd": 2.744,
+                "cost": 93.425,
+                "source_node": 69,
+                "target_node": 68,
+                "edge_idx": 173
+            },
+            {
+                "segment_id": "88:0",
+                "orig_feature_id": 88,
+                "direction": "forward",
+                "length": 153.106,
+                "dynwd": 2.338,
+                "cost": 166.416,
+                "source_node": 68,
+                "target_node": 70,
+                "edge_idx": 174
+            },
+            {
+                "segment_id": "91:0",
+                "orig_feature_id": 91,
+                "direction": "backward",
+                "length": 20.232,
+                "dynwd": 1.677,
+                "cost": 36.846999999999994,
+                "source_node": 70,
+                "target_node": 71,
+                "edge_idx": 181
+            },
+            {
+                "segment_id": "90:0",
+                "orig_feature_id": 90,
+                "direction": "backward",
+                "length": 35.895,
+                "dynwd": 1.758,
+                "cost": 52.105000000000004,
+                "source_node": 71,
+                "target_node": 64,
+                "edge_idx": 179
+            },
+            {
+                "segment_id": "82:0",
+                "orig_feature_id": 82,
+                "direction": "forward",
+                "length": 186.942,
+                "dynwd": 2.604,
+                "cost": 198.922,
+                "source_node": 64,
+                "target_node": 65,
+                "edge_idx": 162
+            },
+            {
+                "segment_id": "191:0",
+                "orig_feature_id": 191,
+                "direction": "forward",
+                "length": 154.44,
+                "dynwd": 2.52,
+                "cost": 166.84,
+                "source_node": 65,
+                "target_node": 141,
+                "edge_idx": 340
+            },
+            {
+                "segment_id": "229:1",
+                "orig_feature_id": 229,
+                "direction": "forward",
+                "length": 89.15532276014177,
+                "dynwd": 2.415,
+                "cost": 102.08032276014177,
+                "source_node": 141,
+                "target_node": 172,
+                "edge_idx": 414
+            },
+            {
+                "segment_id": "229:0",
+                "orig_feature_id": 229,
+                "direction": "forward",
+                "length": 8.029570132309429,
+                "dynwd": 2.415,
+                "cost": 20.954570132309428,
+                "source_node": 172,
+                "target_node": 171,
+                "edge_idx": 412
+            },
+            {
+                "segment_id": "228:0",
+                "orig_feature_id": 228,
+                "direction": "forward",
+                "length": 10.355,
+                "dynwd": 1.819,
+                "cost": 26.26,
+                "source_node": 171,
+                "target_node": 143,
+                "edge_idx": 410
+            },
+            {
+                "segment_id": "192:0",
+                "orig_feature_id": 192,
+                "direction": "forward",
+                "length": 133.229,
+                "dynwd": 2.321,
+                "cost": 146.62400000000002,
+                "source_node": 143,
+                "target_node": 144,
+                "edge_idx": 342
+            },
+            {
+                "segment_id": "493:0",
+                "orig_feature_id": 493,
+                "direction": "forward",
+                "length": 100.687,
+                "dynwd": 2.421,
+                "cost": 113.582,
+                "source_node": 144,
+                "target_node": 23,
+                "edge_idx": 904
+            },
+            {
+                "segment_id": "34:0",
+                "orig_feature_id": 34,
+                "direction": "forward",
+                "length": 19.635,
+                "dynwd": 1.758,
+                "cost": 35.845,
+                "source_node": 23,
+                "target_node": 24,
+                "edge_idx": 66
+            },
+            {
+                "segment_id": "37:0",
+                "orig_feature_id": 37,
+                "direction": "forward",
+                "length": 96.309,
+                "dynwd": 2.404,
+                "cost": 109.289,
+                "source_node": 24,
+                "target_node": 26,
+                "edge_idx": 72
+            },
+            {
+                "segment_id": "253:0",
+                "orig_feature_id": 253,
+                "direction": "forward",
+                "length": 36.562,
+                "dynwd": 2.416,
+                "cost": 49.482,
+                "source_node": 26,
+                "target_node": 190,
+                "edge_idx": 456
+            },
+            {
+                "segment_id": "254:0",
+                "orig_feature_id": 254,
+                "direction": "forward",
+                "length": 177.491,
+                "dynwd": 2.416,
+                "cost": 190.411,
+                "source_node": 190,
+                "target_node": 191,
+                "edge_idx": 458
+            },
+            {
+                "segment_id": "255:0",
+                "orig_feature_id": 255,
+                "direction": "forward",
+                "length": 104.375,
+                "dynwd": 2.416,
+                "cost": 117.295,
+                "source_node": 191,
+                "target_node": 192,
+                "edge_idx": 460
+            },
+            {
+                "segment_id": "284:0",
+                "orig_feature_id": 284,
+                "direction": "forward",
+                "length": 20.853,
+                "dynwd": 1.702,
+                "cost": 37.343,
+                "source_node": 192,
+                "target_node": 223,
+                "edge_idx": 518
+            },
+            {
+                "segment_id": "299:0",
+                "orig_feature_id": 299,
+                "direction": "forward",
+                "length": 91.387,
+                "dynwd": 2.112,
+                "cost": 105.827,
+                "source_node": 223,
+                "target_node": 237,
+                "edge_idx": 548
+            },
+            {
+                "segment_id": "300:0",
+                "orig_feature_id": 300,
+                "direction": "forward",
+                "length": 19.552,
+                "dynwd": 2.296,
+                "cost": 33.072,
+                "source_node": 237,
+                "target_node": 238,
+                "edge_idx": 550
+            },
+            {
+                "segment_id": "301:0",
+                "orig_feature_id": 301,
+                "direction": "forward",
+                "length": 10.866,
+                "dynwd": 2.296,
+                "cost": 24.386000000000003,
+                "source_node": 238,
+                "target_node": 239,
+                "edge_idx": 552
+            },
+            {
+                "segment_id": "302:0",
+                "orig_feature_id": 302,
+                "direction": "forward",
+                "length": 5.895,
+                "dynwd": 1.619,
+                "cost": 22.8,
+                "source_node": 239,
+                "target_node": 240,
+                "edge_idx": 554
+            },
+            {
+                "segment_id": "303:0",
+                "orig_feature_id": 303,
+                "direction": "forward",
+                "length": 15.033,
+                "dynwd": 2.184,
+                "cost": 29.113,
+                "source_node": 240,
+                "target_node": 241,
+                "edge_idx": 556
+            },
+            {
+                "segment_id": "372:0",
+                "orig_feature_id": 372,
+                "direction": "forward",
+                "length": 19.891,
+                "dynwd": 1.235,
+                "cost": 38.715999999999994,
+                "source_node": 241,
+                "target_node": 292,
+                "edge_idx": 670
+            },
+            {
+                "segment_id": "376:0",
+                "orig_feature_id": 376,
+                "direction": "forward",
+                "length": 42.498,
+                "dynwd": 2.009,
+                "cost": 57.452999999999996,
+                "source_node": 292,
+                "target_node": 296,
+                "edge_idx": 678
+            },
+            {
+                "segment_id": "377:0",
+                "orig_feature_id": 377,
+                "direction": "forward",
+                "length": 32.424,
+                "dynwd": 1.847,
+                "cost": 48.189,
+                "source_node": 296,
+                "target_node": 297,
+                "edge_idx": 680
+            }
+        ],
+        "route_cost": 2133.313892892451,
+        "route_length": 1765.743892892451,
+        "route_average_walkability": 2.172538461538461,
+        "total_route_cost": 4453.13089289245,
+        "total_route_length": 3630.675892892451
+    },
+    "baseline_dijkstra": {
+        "route_edges": [
+            {
+                "segment_id": "414:0",
+                "orig_feature_id": 414,
+                "direction": "backward",
+                "length": 98.757,
+                "dynwd": 2.744,
+                "cost": 110.037,
+                "source_node": 80,
+                "target_node": 69,
+                "edge_idx": 753
+            },
+            {
+                "segment_id": "87:0",
+                "orig_feature_id": 87,
+                "direction": "backward",
+                "length": 82.145,
+                "dynwd": 2.744,
+                "cost": 93.425,
+                "source_node": 69,
+                "target_node": 68,
+                "edge_idx": 173
+            },
+            {
+                "segment_id": "88:0",
+                "orig_feature_id": 88,
+                "direction": "forward",
+                "length": 153.106,
+                "dynwd": 2.338,
+                "cost": 166.416,
+                "source_node": 68,
+                "target_node": 70,
+                "edge_idx": 174
+            },
+            {
+                "segment_id": "91:0",
+                "orig_feature_id": 91,
+                "direction": "backward",
+                "length": 20.232,
+                "dynwd": 1.677,
+                "cost": 36.846999999999994,
+                "source_node": 70,
+                "target_node": 71,
+                "edge_idx": 181
+            },
+            {
+                "segment_id": "90:0",
+                "orig_feature_id": 90,
+                "direction": "backward",
+                "length": 35.895,
+                "dynwd": 1.758,
+                "cost": 52.105000000000004,
+                "source_node": 71,
+                "target_node": 64,
+                "edge_idx": 179
+            },
+            {
+                "segment_id": "82:0",
+                "orig_feature_id": 82,
+                "direction": "forward",
+                "length": 186.942,
+                "dynwd": 2.604,
+                "cost": 198.922,
+                "source_node": 64,
+                "target_node": 65,
+                "edge_idx": 162
+            },
+            {
+                "segment_id": "191:0",
+                "orig_feature_id": 191,
+                "direction": "forward",
+                "length": 154.44,
+                "dynwd": 2.52,
+                "cost": 166.84,
+                "source_node": 65,
+                "target_node": 141,
+                "edge_idx": 340
+            },
+            {
+                "segment_id": "229:1",
+                "orig_feature_id": 229,
+                "direction": "forward",
+                "length": 89.15532276014177,
+                "dynwd": 2.415,
+                "cost": 102.08032276014177,
+                "source_node": 141,
+                "target_node": 172,
+                "edge_idx": 414
+            },
+            {
+                "segment_id": "229:0",
+                "orig_feature_id": 229,
+                "direction": "forward",
+                "length": 8.029570132309429,
+                "dynwd": 2.415,
+                "cost": 20.954570132309428,
+                "source_node": 172,
+                "target_node": 171,
+                "edge_idx": 412
+            },
+            {
+                "segment_id": "228:0",
+                "orig_feature_id": 228,
+                "direction": "forward",
+                "length": 10.355,
+                "dynwd": 1.819,
+                "cost": 26.26,
+                "source_node": 171,
+                "target_node": 143,
+                "edge_idx": 410
+            },
+            {
+                "segment_id": "192:0",
+                "orig_feature_id": 192,
+                "direction": "forward",
+                "length": 133.229,
+                "dynwd": 2.321,
+                "cost": 146.62400000000002,
+                "source_node": 143,
+                "target_node": 144,
+                "edge_idx": 342
+            },
+            {
+                "segment_id": "493:0",
+                "orig_feature_id": 493,
+                "direction": "forward",
+                "length": 100.687,
+                "dynwd": 2.421,
+                "cost": 113.582,
+                "source_node": 144,
+                "target_node": 23,
+                "edge_idx": 904
+            },
+            {
+                "segment_id": "34:0",
+                "orig_feature_id": 34,
+                "direction": "forward",
+                "length": 19.635,
+                "dynwd": 1.758,
+                "cost": 35.845,
+                "source_node": 23,
+                "target_node": 24,
+                "edge_idx": 66
+            },
+            {
+                "segment_id": "37:0",
+                "orig_feature_id": 37,
+                "direction": "forward",
+                "length": 96.309,
+                "dynwd": 2.404,
+                "cost": 109.289,
+                "source_node": 24,
+                "target_node": 26,
+                "edge_idx": 72
+            },
+            {
+                "segment_id": "253:0",
+                "orig_feature_id": 253,
+                "direction": "forward",
+                "length": 36.562,
+                "dynwd": 2.416,
+                "cost": 49.482,
+                "source_node": 26,
+                "target_node": 190,
+                "edge_idx": 456
+            },
+            {
+                "segment_id": "254:0",
+                "orig_feature_id": 254,
+                "direction": "forward",
+                "length": 177.491,
+                "dynwd": 2.416,
+                "cost": 190.411,
+                "source_node": 190,
+                "target_node": 191,
+                "edge_idx": 458
+            },
+            {
+                "segment_id": "255:0",
+                "orig_feature_id": 255,
+                "direction": "forward",
+                "length": 104.375,
+                "dynwd": 2.416,
+                "cost": 117.295,
+                "source_node": 191,
+                "target_node": 192,
+                "edge_idx": 460
+            },
+            {
+                "segment_id": "284:0",
+                "orig_feature_id": 284,
+                "direction": "forward",
+                "length": 20.853,
+                "dynwd": 1.702,
+                "cost": 37.343,
+                "source_node": 192,
+                "target_node": 223,
+                "edge_idx": 518
+            },
+            {
+                "segment_id": "299:0",
+                "orig_feature_id": 299,
+                "direction": "forward",
+                "length": 91.387,
+                "dynwd": 2.112,
+                "cost": 105.827,
+                "source_node": 223,
+                "target_node": 237,
+                "edge_idx": 548
+            },
+            {
+                "segment_id": "300:0",
+                "orig_feature_id": 300,
+                "direction": "forward",
+                "length": 19.552,
+                "dynwd": 2.296,
+                "cost": 33.072,
+                "source_node": 237,
+                "target_node": 238,
+                "edge_idx": 550
+            },
+            {
+                "segment_id": "301:0",
+                "orig_feature_id": 301,
+                "direction": "forward",
+                "length": 10.866,
+                "dynwd": 2.296,
+                "cost": 24.386000000000003,
+                "source_node": 238,
+                "target_node": 239,
+                "edge_idx": 552
+            },
+            {
+                "segment_id": "302:0",
+                "orig_feature_id": 302,
+                "direction": "forward",
+                "length": 5.895,
+                "dynwd": 1.619,
+                "cost": 22.8,
+                "source_node": 239,
+                "target_node": 240,
+                "edge_idx": 554
+            },
+            {
+                "segment_id": "303:0",
+                "orig_feature_id": 303,
+                "direction": "forward",
+                "length": 15.033,
+                "dynwd": 2.184,
+                "cost": 29.113,
+                "source_node": 240,
+                "target_node": 241,
+                "edge_idx": 556
+            },
+            {
+                "segment_id": "372:0",
+                "orig_feature_id": 372,
+                "direction": "forward",
+                "length": 19.891,
+                "dynwd": 1.235,
+                "cost": 38.715999999999994,
+                "source_node": 241,
+                "target_node": 292,
+                "edge_idx": 670
+            },
+            {
+                "segment_id": "376:0",
+                "orig_feature_id": 376,
+                "direction": "forward",
+                "length": 42.498,
+                "dynwd": 2.009,
+                "cost": 57.452999999999996,
+                "source_node": 292,
+                "target_node": 296,
+                "edge_idx": 678
+            },
+            {
+                "segment_id": "377:0",
+                "orig_feature_id": 377,
+                "direction": "forward",
+                "length": 32.424,
+                "dynwd": 1.847,
+                "cost": 48.189,
+                "source_node": 296,
+                "target_node": 297,
+                "edge_idx": 680
+            }
+        ],
+        "route_found": true,
+        "route_length": 1765.743892892451,
+        "route_cost": 2133.313892892451,
+        "route_average_walkability": 2.172538461538461
+    },
+    "pairwise_similarity": [
+        {
+            "path_i": 1,
+            "path_j": 2,
+            "similarity": 0.05391377255039438,
+            "theta_threshold": 0.5,
+            "within_threshold": true,
+            "shared_weight": 115.015,
+            "hard_budget_cap": 1066.6569464462254,
+            "within_hard_budget": true
+        }
+    ],
+    "comparison_to_dijkstra": {
+        "matches_exact_route": true,
+        "baseline_k_paths_found": 2,
+        "sqa_all_paths_found": true,
+        "sqa_total_cost_minus_baseline": 0.0
+    },
+    "comparison_to_baseline_heuristic": {
+        "matches_exact_set": true,
+        "baseline_k_paths_found": 2,
+        "sqa_all_paths_found": true,
+        "sqa_total_cost_minus_baseline": 0.0,
+        "sqa_max_similarity_minus_theta": -0.44608622744960563,
+        "sqa_max_shared_weight_minus_cap": -951.6419464462255
+    },
+    "constraint_diagnostics": {
+        "k_paths_requested": 2,
+        "all_paths_found": true,
+        "pairwise_similarity_within_threshold": true,
+        "pairwise_hard_budget_within_cap": true,
+        "max_pairwise_similarity": 0.05391377255039438,
+        "max_pairwise_shared_weight": 115.015
+    },
+    "decoded_route_edges": [
+        {
+            "segment_id": "414:0",
+            "orig_feature_id": 414,
+            "direction": "backward",
+            "length": 98.757,
+            "dynwd": 2.744,
+            "cost": 110.037,
+            "source_node": 80,
+            "target_node": 69,
+            "edge_idx": 753
+        },
+        {
+            "segment_id": "87:0",
+            "orig_feature_id": 87,
+            "direction": "backward",
+            "length": 82.145,
+            "dynwd": 2.744,
+            "cost": 93.425,
+            "source_node": 69,
+            "target_node": 68,
+            "edge_idx": 173
+        },
+        {
+            "segment_id": "88:0",
+            "orig_feature_id": 88,
+            "direction": "forward",
+            "length": 153.106,
+            "dynwd": 2.338,
+            "cost": 166.416,
+            "source_node": 68,
+            "target_node": 70,
+            "edge_idx": 174
+        },
+        {
+            "segment_id": "91:0",
+            "orig_feature_id": 91,
+            "direction": "backward",
+            "length": 20.232,
+            "dynwd": 1.677,
+            "cost": 36.846999999999994,
+            "source_node": 70,
+            "target_node": 71,
+            "edge_idx": 181
+        },
+        {
+            "segment_id": "90:0",
+            "orig_feature_id": 90,
+            "direction": "backward",
+            "length": 35.895,
+            "dynwd": 1.758,
+            "cost": 52.105000000000004,
+            "source_node": 71,
+            "target_node": 64,
+            "edge_idx": 179
+        },
+        {
+            "segment_id": "82:0",
+            "orig_feature_id": 82,
+            "direction": "forward",
+            "length": 186.942,
+            "dynwd": 2.604,
+            "cost": 198.922,
+            "source_node": 64,
+            "target_node": 65,
+            "edge_idx": 162
+        },
+        {
+            "segment_id": "191:0",
+            "orig_feature_id": 191,
+            "direction": "forward",
+            "length": 154.44,
+            "dynwd": 2.52,
+            "cost": 166.84,
+            "source_node": 65,
+            "target_node": 141,
+            "edge_idx": 340
+        },
+        {
+            "segment_id": "229:1",
+            "orig_feature_id": 229,
+            "direction": "forward",
+            "length": 89.15532276014177,
+            "dynwd": 2.415,
+            "cost": 102.08032276014177,
+            "source_node": 141,
+            "target_node": 172,
+            "edge_idx": 414
+        },
+        {
+            "segment_id": "229:0",
+            "orig_feature_id": 229,
+            "direction": "forward",
+            "length": 8.029570132309429,
+            "dynwd": 2.415,
+            "cost": 20.954570132309428,
+            "source_node": 172,
+            "target_node": 171,
+            "edge_idx": 412
+        },
+        {
+            "segment_id": "228:0",
+            "orig_feature_id": 228,
+            "direction": "forward",
+            "length": 10.355,
+            "dynwd": 1.819,
+            "cost": 26.26,
+            "source_node": 171,
+            "target_node": 143,
+            "edge_idx": 410
+        },
+        {
+            "segment_id": "192:0",
+            "orig_feature_id": 192,
+            "direction": "forward",
+            "length": 133.229,
+            "dynwd": 2.321,
+            "cost": 146.62400000000002,
+            "source_node": 143,
+            "target_node": 144,
+            "edge_idx": 342
+        },
+        {
+            "segment_id": "493:0",
+            "orig_feature_id": 493,
+            "direction": "forward",
+            "length": 100.687,
+            "dynwd": 2.421,
+            "cost": 113.582,
+            "source_node": 144,
+            "target_node": 23,
+            "edge_idx": 904
+        },
+        {
+            "segment_id": "34:0",
+            "orig_feature_id": 34,
+            "direction": "forward",
+            "length": 19.635,
+            "dynwd": 1.758,
+            "cost": 35.845,
+            "source_node": 23,
+            "target_node": 24,
+            "edge_idx": 66
+        },
+        {
+            "segment_id": "37:0",
+            "orig_feature_id": 37,
+            "direction": "forward",
+            "length": 96.309,
+            "dynwd": 2.404,
+            "cost": 109.289,
+            "source_node": 24,
+            "target_node": 26,
+            "edge_idx": 72
+        },
+        {
+            "segment_id": "253:0",
+            "orig_feature_id": 253,
+            "direction": "forward",
+            "length": 36.562,
+            "dynwd": 2.416,
+            "cost": 49.482,
+            "source_node": 26,
+            "target_node": 190,
+            "edge_idx": 456
+        },
+        {
+            "segment_id": "254:0",
+            "orig_feature_id": 254,
+            "direction": "forward",
+            "length": 177.491,
+            "dynwd": 2.416,
+            "cost": 190.411,
+            "source_node": 190,
+            "target_node": 191,
+            "edge_idx": 458
+        },
+        {
+            "segment_id": "255:0",
+            "orig_feature_id": 255,
+            "direction": "forward",
+            "length": 104.375,
+            "dynwd": 2.416,
+            "cost": 117.295,
+            "source_node": 191,
+            "target_node": 192,
+            "edge_idx": 460
+        },
+        {
+            "segment_id": "284:0",
+            "orig_feature_id": 284,
+            "direction": "forward",
+            "length": 20.853,
+            "dynwd": 1.702,
+            "cost": 37.343,
+            "source_node": 192,
+            "target_node": 223,
+            "edge_idx": 518
+        },
+        {
+            "segment_id": "299:0",
+            "orig_feature_id": 299,
+            "direction": "forward",
+            "length": 91.387,
+            "dynwd": 2.112,
+            "cost": 105.827,
+            "source_node": 223,
+            "target_node": 237,
+            "edge_idx": 548
+        },
+        {
+            "segment_id": "300:0",
+            "orig_feature_id": 300,
+            "direction": "forward",
+            "length": 19.552,
+            "dynwd": 2.296,
+            "cost": 33.072,
+            "source_node": 237,
+            "target_node": 238,
+            "edge_idx": 550
+        },
+        {
+            "segment_id": "301:0",
+            "orig_feature_id": 301,
+            "direction": "forward",
+            "length": 10.866,
+            "dynwd": 2.296,
+            "cost": 24.386000000000003,
+            "source_node": 238,
+            "target_node": 239,
+            "edge_idx": 552
+        },
+        {
+            "segment_id": "302:0",
+            "orig_feature_id": 302,
+            "direction": "forward",
+            "length": 5.895,
+            "dynwd": 1.619,
+            "cost": 22.8,
+            "source_node": 239,
+            "target_node": 240,
+            "edge_idx": 554
+        },
+        {
+            "segment_id": "303:0",
+            "orig_feature_id": 303,
+            "direction": "forward",
+            "length": 15.033,
+            "dynwd": 2.184,
+            "cost": 29.113,
+            "source_node": 240,
+            "target_node": 241,
+            "edge_idx": 556
+        },
+        {
+            "segment_id": "372:0",
+            "orig_feature_id": 372,
+            "direction": "forward",
+            "length": 19.891,
+            "dynwd": 1.235,
+            "cost": 38.715999999999994,
+            "source_node": 241,
+            "target_node": 292,
+            "edge_idx": 670
+        },
+        {
+            "segment_id": "376:0",
+            "orig_feature_id": 376,
+            "direction": "forward",
+            "length": 42.498,
+            "dynwd": 2.009,
+            "cost": 57.452999999999996,
+            "source_node": 292,
+            "target_node": 296,
+            "edge_idx": 678
+        },
+        {
+            "segment_id": "377:0",
+            "orig_feature_id": 377,
+            "direction": "forward",
+            "length": 32.424,
+            "dynwd": 1.847,
+            "cost": 48.189,
+            "source_node": 296,
+            "target_node": 297,
+            "edge_idx": 680
+        }
+    ],
+    "kspwlo_artifacts": {
+        "artifact_dir": "/Users/tsun-yuanku/local/qa_course_platform_github_pages/SQA_Algorithm/outputs/kspwlo_routing/benchmarks/hard_theta_formal_02/runs/d1200_dynwe17/seed_042/05_kspwlo_problem",
+        "problem_definition_json": "/Users/tsun-yuanku/local/qa_course_platform_github_pages/SQA_Algorithm/outputs/kspwlo_routing/benchmarks/hard_theta_formal_02/runs/d1200_dynwe17/seed_042/05_kspwlo_problem/problem_definition.json",
+        "baseline_penalty_heuristic_json": "/Users/tsun-yuanku/local/qa_course_platform_github_pages/SQA_Algorithm/outputs/kspwlo_routing/benchmarks/hard_theta_formal_02/runs/d1200_dynwe17/seed_042/05_kspwlo_problem/baseline_penalty_heuristic.json",
+        "sqa_path_summaries_json": "/Users/tsun-yuanku/local/qa_course_platform_github_pages/SQA_Algorithm/outputs/kspwlo_routing/benchmarks/hard_theta_formal_02/runs/d1200_dynwe17/seed_042/05_kspwlo_problem/sqa_path_summaries.json",
+        "pairwise_similarity_json": "/Users/tsun-yuanku/local/qa_course_platform_github_pages/SQA_Algorithm/outputs/kspwlo_routing/benchmarks/hard_theta_formal_02/runs/d1200_dynwe17/seed_042/05_kspwlo_problem/pairwise_similarity.json"
+    },
+    "metadata": {
+        "rule": "kspwlo_routing",
+        "data_dir": "/Users/tsun-yuanku/local/qa_course_platform_github_pages/303_demo_data/sidewalks/algorithm_ready",
+        "best_energy": -45201.8004114675,
+        "offset": 50000.0,
+        "steps": 60,
+        "replicas": 12,
+        "slices": 20,
+        "qubo_dimension": 2978,
+        "init_prob": 0.01,
+        "initialization_mode": "penalty_baseline_hard_overlap",
+        "initial_flip_prob": 0.02,
+        "iteration_history_csv": "/Users/tsun-yuanku/local/qa_course_platform_github_pages/SQA_Algorithm/outputs/kspwlo_routing/benchmarks/hard_theta_formal_02/runs/d1200_dynwe17/seed_042/03_sqa_run/iteration_history.csv",
+        "iteration_records": 60
+    }
+}

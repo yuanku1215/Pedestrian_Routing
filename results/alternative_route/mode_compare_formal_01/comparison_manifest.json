@@ -1,0 +1,55 @@
+{
+    "created_at": "2026-04-08T01:23:31.123159",
+    "comparison_dir": "/Users/tsun-yuanku/local/qa_course_platform_github_pages/SQA_Algorithm/outputs/kspwlo_routing/benchmarks/mode_compare_formal_01",
+    "data_dir": "/Users/tsun-yuanku/local/qa_course_platform_github_pages/303_demo_data/sidewalks/algorithm_ready",
+    "runner": "/Users/tsun-yuanku/local/qa_course_platform_github_pages/SQA_Algorithm/tools/run_kspwlo_routing_benchmark.py",
+    "steps": 60,
+    "replicas": 12,
+    "slices": 20,
+    "beta_init": 0.2,
+    "beta_final": 4.0,
+    "gamma_init": 3.0,
+    "gamma_final": 0.2,
+    "seed_base": 42,
+    "num_seeds": 1,
+    "jobs": 8,
+    "distances": [
+        400.0,
+        800.0,
+        1200.0
+    ],
+    "time_slice_fields": [
+        "dynwd05",
+        "dynwd08",
+        "dynwd12",
+        "dynwd17",
+        "dynwd21",
+        "dynwe05",
+        "dynwe08",
+        "dynwe12",
+        "dynwe17",
+        "dynwe21"
+    ],
+    "modes": [
+        {
+            "mode_name": "budget_warm_on",
+            "warm_start": "on",
+            "hard_overlap_mode": "budget"
+        },
+        {
+            "mode_name": "budget_warm_off",
+            "warm_start": "off",
+            "hard_overlap_mode": "budget"
+        },
+        {
+            "mode_name": "budget_plus_ratio_warm_on",
+            "warm_start": "on",
+            "hard_overlap_mode": "budget_plus_ratio"
+        },
+        {
+            "mode_name": "budget_plus_ratio_warm_off",
+            "warm_start": "off",
+            "hard_overlap_mode": "budget_plus_ratio"
+        }
+    ]
+}

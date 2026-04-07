@@ -1,0 +1,11 @@
+walkability_field,total_runs,win,tie,loss,no_route,infeasible
+dynwd05,3,0,0,0,3,0
+dynwd08,3,0,0,0,3,0
+dynwd12,3,0,0,0,3,0
+dynwd17,3,0,0,0,3,0
+dynwd21,3,0,0,0,3,0
+dynwe05,3,0,0,0,3,0
+dynwe08,3,0,0,0,3,0
+dynwe12,3,0,0,0,3,0
+dynwe17,3,0,0,0,3,0
+dynwe21,3,0,0,0,3,0

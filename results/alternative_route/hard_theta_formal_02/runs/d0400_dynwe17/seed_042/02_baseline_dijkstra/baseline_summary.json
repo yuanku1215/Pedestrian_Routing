@@ -1,0 +1,162 @@
+{
+    "route_edges": [
+        {
+            "segment_id": "37:0",
+            "orig_feature_id": 37,
+            "direction": "forward",
+            "length": 96.309,
+            "dynwd": 2.404,
+            "cost": 109.289,
+            "source_node": 24,
+            "target_node": 26,
+            "edge_idx": 72
+        },
+        {
+            "segment_id": "253:0",
+            "orig_feature_id": 253,
+            "direction": "forward",
+            "length": 36.562,
+            "dynwd": 2.416,
+            "cost": 49.482,
+            "source_node": 26,
+            "target_node": 190,
+            "edge_idx": 456
+        },
+        {
+            "segment_id": "254:0",
+            "orig_feature_id": 254,
+            "direction": "forward",
+            "length": 177.491,
+            "dynwd": 2.416,
+            "cost": 190.411,
+            "source_node": 190,
+            "target_node": 191,
+            "edge_idx": 458
+        },
+        {
+            "segment_id": "255:0",
+            "orig_feature_id": 255,
+            "direction": "forward",
+            "length": 104.375,
+            "dynwd": 2.416,
+            "cost": 117.295,
+            "source_node": 191,
+            "target_node": 192,
+            "edge_idx": 460
+        },
+        {
+            "segment_id": "284:0",
+            "orig_feature_id": 284,
+            "direction": "forward",
+            "length": 20.853,
+            "dynwd": 1.702,
+            "cost": 37.343,
+            "source_node": 192,
+            "target_node": 223,
+            "edge_idx": 518
+        },
+        {
+            "segment_id": "299:0",
+            "orig_feature_id": 299,
+            "direction": "forward",
+            "length": 91.387,
+            "dynwd": 2.112,
+            "cost": 105.827,
+            "source_node": 223,
+            "target_node": 237,
+            "edge_idx": 548
+        },
+        {
+            "segment_id": "300:0",
+            "orig_feature_id": 300,
+            "direction": "forward",
+            "length": 19.552,
+            "dynwd": 2.296,
+            "cost": 33.072,
+            "source_node": 237,
+            "target_node": 238,
+            "edge_idx": 550
+        },
+        {
+            "segment_id": "301:0",
+            "orig_feature_id": 301,
+            "direction": "forward",
+            "length": 10.866,
+            "dynwd": 2.296,
+            "cost": 24.386000000000003,
+            "source_node": 238,
+            "target_node": 239,
+            "edge_idx": 552
+        },
+        {
+            "segment_id": "302:0",
+            "orig_feature_id": 302,
+            "direction": "forward",
+            "length": 5.895,
+            "dynwd": 1.619,
+            "cost": 22.8,
+            "source_node": 239,
+            "target_node": 240,
+            "edge_idx": 554
+        },
+        {
+            "segment_id": "303:0",
+            "orig_feature_id": 303,
+            "direction": "forward",
+            "length": 15.033,
+            "dynwd": 2.184,
+            "cost": 29.113,
+            "source_node": 240,
+            "target_node": 241,
+            "edge_idx": 556
+        },
+        {
+            "segment_id": "372:0",
+            "orig_feature_id": 372,
+            "direction": "forward",
+            "length": 19.891,
+            "dynwd": 1.235,
+            "cost": 38.715999999999994,
+            "source_node": 241,
+            "target_node": 292,
+            "edge_idx": 670
+        },
+        {
+            "segment_id": "376:0",
+            "orig_feature_id": 376,
+            "direction": "forward",
+            "length": 42.498,
+            "dynwd": 2.009,
+            "cost": 57.452999999999996,
+            "source_node": 292,
+            "target_node": 296,
+            "edge_idx": 678
+        },
+        {
+            "segment_id": "377:0",
+            "orig_feature_id": 377,
+            "direction": "forward",
+            "length": 32.424,
+            "dynwd": 1.847,
+            "cost": 48.189,
+            "source_node": 296,
+            "target_node": 297,
+            "edge_idx": 680
+        },
+        {
+            "segment_id": "382:0",
+            "orig_feature_id": 382,
+            "direction": "forward",
+            "length": 29.99,
+            "dynwd": 1.897,
+            "cost": 45.504999999999995,
+            "source_node": 297,
+            "target_node": 301,
+            "edge_idx": 690
+        }
+    ],
+    "route_found": true,
+    "route_length": 703.126,
+    "route_cost": 908.881,
+    "route_average_walkability": 2.060642857142857
+}

@@ -1,89 +1,25 @@
-# Raw Data Upload
+# Raw Data
 
-Please click the link below to see the data instructions and fill the required information:
+這裡放的是研究過程中的原始空間資料與動態切片資料。
 
-**Google Sheet (Data Instructions & Upload Guide)**  
-https://docs.google.com/spreadsheets/d/1ePFhW0V6s9hoISHINA2vn0lei-4qiRB2MRt6Q5ybNYI/edit?usp=sharing
+主要類型包含：
 
-Upload your files directly into this folder.  
-If you're unsure where to put something, just upload it here. I will organize it later.
+- `sidewalks`: 行人道與動態 walkability 線資料
+- `traffic`: 平日 / 假日、不同时段的交通切片
+- `road_network`: 道路網
+- `boundary`: 研究範圍
+- `population`, `accidents`, `airpollution`, `slope`, `obstacles`: 其他環境圖層
 
+## How It Connects To The Current Pipeline
 
+目前 repo 中真正直接餵給演算法使用的不是這層 raw data，而是：
 
+- [`data/processed/algorithm_ready`](../processed/algorithm_ready)
 
+也就是說：
 
+`raw data -> preprocessing / graph packaging -> algorithm_ready -> SQA / baseline benchmarks`
 
+若你之後要重建圖資料，請看：
 
-# 📁 Raw Data Upload Instructions
-
-This guide explains how to upload, create, delete, and edit files inside the repository.  
-You do **not** need to know Git commands — everything can be done from the GitHub website.
-
----
-
-## ✅ 1. Upload Files (Most Common)
-
-📌 *Use this when you want to upload datasets such as road network, sidewalks, POI, accidents, etc.*
-
-1. Open the folder where you want to upload  
-   → Example: `data/raw/road_network/`
-2. Click **➕ Add file → Upload files**
-3. Drag your files into the upload window  
-   (You can upload multiple files at once)
-4. Add a short commit message  
-   Example: `Add NCKU road network dataset`
-5. Click **Commit changes**
-
-✔ The files will be uploaded to the repository.
-
----
-
-## 📂 2. Create a New Folder
-
-GitHub does not have a direct “new folder” button.  
-A folder is created **when you create a new file inside it**.
-
-Example: Create folder:  
-`data/raw/obstacles/ramps/`
-
-Steps:
-
-1. Go to: `data/raw/obstacles/`
-2. Click **➕ Add file → Create new file**
-3. In the file name field, type:
-
-```
-ramps/.gitkeep
-```
-
-4. Add a commit message  
-5. Click **Commit changes**
-
-✔ A new folder named **ramps** will be created automatically.
-
----
-
-## 🗑️ 3. Delete a File
-
-1. Open the file you want to delete  
-2. Click the **🗑 Delete this file** icon (top-right)  
-3. Add a short commit message  
-   Example: `Remove outdated dataset`
-4. Click **Commit changes**
-
-✔ The file will be deleted from the repository.
-
----
-
-## ✏️ 4. Edit an Existing File (e.g., README)
-
-1. Open the file you want to edit  
-   (For example: `data/raw/README.md`)
-2. Click the **✏️ Edit this file** icon (top-right)
-3. Modify the content
-4. Add a commit message
-5. Click **Commit changes**
-
-✔ Your changes will be saved.
-
----
+- [`src/sqa_algorithm/tools/build_sidewalk_graph_package.py`](../../src/sqa_algorithm/tools/build_sidewalk_graph_package.py)

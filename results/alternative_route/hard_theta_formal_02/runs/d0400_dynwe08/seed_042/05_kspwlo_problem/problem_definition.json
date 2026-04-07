@@ -1,0 +1,16 @@
+{
+    "problem_name": "kSPwLO-style alternative routing with SQA",
+    "k_paths": 2,
+    "theta_overlap": 0.5,
+    "epsilon_near_shortest": 0.2,
+    "overlap_weight_field": "cost",
+    "soft_overlap_penalty": 3.0,
+    "use_hard_overlap_budget": true,
+    "hard_overlap_penalty": 10000.0,
+    "overlap_link_penalty": 10000.0,
+    "hard_overlap_budget_cap": 454.8365,
+    "hard_overlap_budget_resolution": 5.0,
+    "hard_overlap_slack_bits_per_pair": 7,
+    "source_node": 24,
+    "target_node": 301
+}

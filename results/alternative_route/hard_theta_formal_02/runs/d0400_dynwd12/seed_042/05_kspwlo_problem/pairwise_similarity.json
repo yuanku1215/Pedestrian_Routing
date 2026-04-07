@@ -1,0 +1,12 @@
+[
+    {
+        "path_i": 1,
+        "path_j": 2,
+        "similarity": 0.17532857517328793,
+        "theta_threshold": 0.5,
+        "within_threshold": true,
+        "shared_weight": 158.51999999999998,
+        "hard_budget_cap": 452.0655,
+        "within_hard_budget": true
+    }
+]

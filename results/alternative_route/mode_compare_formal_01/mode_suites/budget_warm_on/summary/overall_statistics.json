@@ -1,0 +1,13 @@
+{
+    "total_runs": 30,
+    "feasible_runs": 30,
+    "wins": 0,
+    "ties": 30,
+    "losses": 0,
+    "no_route_runs": 0,
+    "infeasible_runs": 0,
+    "mean_duration_sec": 45.39443333333334,
+    "mean_cost_gap_vs_baseline": 0.0,
+    "mean_max_similarity": 0.06069839866059675,
+    "manifest": "/Users/tsun-yuanku/local/qa_course_platform_github_pages/SQA_Algorithm/outputs/kspwlo_routing/benchmarks/mode_compare_formal_01/mode_suites/budget_warm_on/benchmark_manifest.json"
+}

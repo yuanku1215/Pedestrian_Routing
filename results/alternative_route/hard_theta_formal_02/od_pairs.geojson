@@ -1,0 +1,10 @@
+{
+"type": "FeatureCollection",
+"name": "od_pairs",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::3826" } },
+"features": [
+{ "type": "Feature", "properties": { "pair_id": "d0400", "target_distance_m": 400, "straight_line_distance_m": 399.89096238073773 }, "geometry": { "type": "LineString", "coordinates": [ [ 169860.099099551618565, 2544071.554789246059954 ], [ 169618.634764435526449, 2543752.795073063578457 ] ] } },
+{ "type": "Feature", "properties": { "pair_id": "d0800", "target_distance_m": 800, "straight_line_distance_m": 799.13598078332973 }, "geometry": { "type": "LineString", "coordinates": [ [ 170083.170941602031235, 2544303.19914381345734 ], [ 169570.645664793439209, 2543690.062816056888551 ] ] } },
+{ "type": "Feature", "properties": { "pair_id": "d1200", "target_distance_m": 1200, "straight_line_distance_m": 1202.8280702483271 }, "geometry": { "type": "LineString", "coordinates": [ [ 170278.274157653067959, 2544772.213573993649334 ], [ 169647.864695459895302, 2543747.82142420206219 ] ] } }
+]
+}

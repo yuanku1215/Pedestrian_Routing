@@ -1,0 +1,9 @@
+{
+"type": "FeatureCollection",
+"name": "source_target_points",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::3826" } },
+"features": [
+{ "type": "Feature", "properties": { "role": "source", "node_id": 24, "x": 169860.09909955162, "y": 2544071.5547892461 }, "geometry": { "type": "Point", "coordinates": [ 169860.099099551618565, 2544071.554789246059954 ] } },
+{ "type": "Feature", "properties": { "role": "target", "node_id": 301, "x": 169618.63476443553, "y": 2543752.7950730636 }, "geometry": { "type": "Point", "coordinates": [ 169618.634764435526449, 2543752.795073063578457 ] } }
+]
+}

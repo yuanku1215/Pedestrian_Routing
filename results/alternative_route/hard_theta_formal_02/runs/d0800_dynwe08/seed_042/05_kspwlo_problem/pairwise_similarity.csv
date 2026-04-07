@@ -1,0 +1,2 @@
+path_i,path_j,similarity,theta_threshold,within_threshold,shared_weight,hard_budget_cap,within_hard_budget
+1,2,0.0,0.5,True,0.0,712.8370000000001,True

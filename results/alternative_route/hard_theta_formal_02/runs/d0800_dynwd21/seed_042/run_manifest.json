@@ -1,0 +1,5 @@
+{
+    "step_01_graph_input": "/Users/tsun-yuanku/local/qa_course_platform_github_pages/SQA_Algorithm/outputs/kspwlo_routing/benchmarks/hard_theta_formal_02/runs/d0800_dynwd21/seed_042/01_graph_input",
+    "step_02_baseline_dijkstra": "/Users/tsun-yuanku/local/qa_course_platform_github_pages/SQA_Algorithm/outputs/kspwlo_routing/benchmarks/hard_theta_formal_02/runs/d0800_dynwd21/seed_042/02_baseline_dijkstra",
+    "step_03_sqa_run": "/Users/tsun-yuanku/local/qa_course_platform_github_pages/SQA_Algorithm/outputs/kspwlo_routing/benchmarks/hard_theta_formal_02/runs/d0800_dynwd21/seed_042/03_sqa_run"
+}

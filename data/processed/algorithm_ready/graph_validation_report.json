@@ -1,0 +1,29 @@
+{
+  "source_file": "/Users/tsun-yuanku/local/qa_course_platform_github_pages/303_demo_data/sidewalks/sidewalk_nckuarea_dynamicwalkability_final_cleaned.geojson",
+  "source_crs": "EPSG:3826",
+  "source_rows": 605,
+  "exploded_segment_count": 612,
+  "node_count": 441,
+  "directed_edge_count": 1224,
+  "null_geometry_count": 0,
+  "invalid_geometry_count": 0,
+  "component_count": 3,
+  "largest_component_id": 0,
+  "largest_component_node_count": 422,
+  "largest_component_segment_count": 594,
+  "leaf_node_count_all": 58,
+  "files_created": [
+    "sidewalk_graph_ready.gpkg",
+    "nodes_all.geojson",
+    "segments_all.geojson",
+    "directed_edges_all.geojson",
+    "nodes_main_component.geojson",
+    "segments_main_component.geojson",
+    "directed_edges_main_component.geojson",
+    "nodes_all.csv",
+    "segments_all.csv",
+    "directed_edges_all.csv",
+    "components_summary.csv",
+    "graph_validation_report.txt"
+  ]
+}

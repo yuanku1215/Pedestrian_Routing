@@ -1,0 +1,11 @@
+walkability_field,total_runs,feasible_runs,within_theta_runs,within_hard_budget_runs,within_pathwise_ratio_runs,wins,ties,losses,no_route_runs,infeasible_runs,mean_cost_gap_vs_baseline,mean_max_similarity
+dynwd05,3,0,3,3,3,0,0,0,3,0,,0.0
+dynwd08,3,0,3,3,3,0,0,0,3,0,,0.0
+dynwd12,3,0,3,3,3,0,0,0,3,0,,0.0
+dynwd17,3,0,3,3,3,0,0,0,3,0,,0.0
+dynwd21,3,0,3,3,3,0,0,0,3,0,,0.0
+dynwe05,3,0,3,3,3,0,0,0,3,0,,0.0
+dynwe08,3,0,3,3,3,0,0,0,3,0,,0.0
+dynwe12,3,0,3,3,3,0,0,0,3,0,,0.0
+dynwe17,3,0,3,3,3,0,0,0,3,0,,0.0
+dynwe21,3,0,3,3,3,0,0,0,3,0,,0.0

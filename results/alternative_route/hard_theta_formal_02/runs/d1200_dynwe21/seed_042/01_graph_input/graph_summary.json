@@ -1,0 +1,28 @@
+{
+    "directed_edges_path": "/Users/tsun-yuanku/local/qa_course_platform_github_pages/303_demo_data/sidewalks/algorithm_ready/directed_edges_main_component.geojson",
+    "segments_path": "/Users/tsun-yuanku/local/qa_course_platform_github_pages/303_demo_data/sidewalks/algorithm_ready/segments_main_component.geojson",
+    "graph_crs": "EPSG:3826",
+    "num_nodes": 422,
+    "num_directed_edges": 1188,
+    "num_segments": 594,
+    "component_ids": [
+        0
+    ],
+    "walkability_field": "dynwe21",
+    "raw_node_id_min": 0,
+    "raw_node_id_max": 440,
+    "source_node": 80,
+    "target_node": 297,
+    "source_coord_projected": [
+        170278.27415765307,
+        2544772.2135739936
+    ],
+    "target_coord_projected": [
+        169647.8646954599,
+        2543747.821424202
+    ],
+    "source_snap_distance": 0.0,
+    "target_snap_distance": 0.0,
+    "data_argument": "/Users/tsun-yuanku/local/qa_course_platform_github_pages/303_demo_data/sidewalks/algorithm_ready",
+    "config_path": "/Users/tsun-yuanku/local/qa_course_platform_github_pages/SQA_Algorithm/outputs/kspwlo_routing/benchmarks/hard_theta_formal_02/configs/d1200_dynwe21.yaml"
+}

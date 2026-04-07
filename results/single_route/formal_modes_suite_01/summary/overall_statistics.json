@@ -1,0 +1,46 @@
+{
+    "total_runs": 450,
+    "mode_primary_outcomes": {
+        "pure_sqa": {
+            "no_route": 150
+        },
+        "baseline_warm_start": {
+            "tie": 150
+        },
+        "baseline_plus_block_move": {
+            "tie": 150
+        }
+    },
+    "mode_sqa_outcomes": {
+        "pure_sqa": {
+            "no_route": 150
+        },
+        "baseline_warm_start": {
+            "tie": 150
+        },
+        "baseline_plus_block_move": {
+            "tie": 150
+        }
+    },
+    "mode_local_search_outcomes": {
+        "pure_sqa": {
+            "skipped": 150
+        },
+        "baseline_warm_start": {
+            "skipped": 150
+        },
+        "baseline_plus_block_move": {
+            "tie": 150
+        }
+    },
+    "mean_duration_sec_by_mode": {
+        "pure_sqa": 35.16311999999999,
+        "baseline_warm_start": 34.72398666666667,
+        "baseline_plus_block_move": 33.42780666666667
+    },
+    "mean_primary_cost_gap_by_mode": {
+        "pure_sqa": null,
+        "baseline_warm_start": 0.0,
+        "baseline_plus_block_move": 0.0
+    }
+}

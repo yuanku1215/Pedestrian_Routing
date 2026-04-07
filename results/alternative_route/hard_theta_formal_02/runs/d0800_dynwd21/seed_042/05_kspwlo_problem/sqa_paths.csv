@@ -1,0 +1,3 @@
+path_index,route_found,selected_edge_count,route_cost,route_length,route_average_walkability,invalid_selected_edges_count
+1,True,20,1432.669,1136.8139999999999,2.04145,0
+2,True,25,1666.209645587535,1291.4596455875349,2.0020000000000002,0

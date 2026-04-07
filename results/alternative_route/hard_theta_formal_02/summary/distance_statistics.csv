@@ -1,0 +1,4 @@
+distance_label,total_runs,feasible_runs,within_theta_runs,within_hard_budget_runs,wins,ties,losses,no_route_runs,infeasible_runs,mean_cost_gap_vs_baseline,mean_max_similarity
+d0400,10,10,10,10,0,10,0,0,0,0.0,0.17670381872675078
+d0800,10,10,10,10,0,10,0,0,0,0.0,0.0
+d1200,10,10,10,10,0,10,0,0,0,0.0,0.0053913772550394385

@@ -1,0 +1,19 @@
+Source file: /Users/tsun-yuanku/local/qa_course_platform_github_pages/303_demo_data/sidewalks/sidewalk_nckuarea_dynamicwalkability_final_cleaned.geojson
+CRS: EPSG:3826
+Original rows: 605
+Exploded segments: 612
+Nodes: 441
+Directed edges: 1224
+Null geometries: 0
+Invalid geometries: 0
+Connected components: 3
+Largest component id: 0
+Largest component nodes: 422
+Largest component segments: 594
+Leaf nodes (all): 58
+
+Interpretation:
+- The original cleaned GeoJSON is geometrically valid.
+- It is not yet algorithm-ready by itself because it does not explicitly contain graph nodes, directed edges, or component labels.
+- The algorithm-ready package produced here keeps the original attributes and adds graph structure required by routing solvers and QGIS workflows.
+- For routing by default, use the *_main_component layers unless you intentionally want to keep disconnected subnetworks.

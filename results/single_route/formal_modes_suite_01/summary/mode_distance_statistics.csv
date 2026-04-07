@@ -1,0 +1,10 @@
+mode,distance_label,total_runs,win,tie,loss,no_route,skipped
+baseline_plus_block_move,d0400,50,0,50,0,0,0
+baseline_plus_block_move,d0800,50,0,50,0,0,0
+baseline_plus_block_move,d1200,50,0,50,0,0,0
+baseline_warm_start,d0400,50,0,50,0,0,0
+baseline_warm_start,d0800,50,0,50,0,0,0
+baseline_warm_start,d1200,50,0,50,0,0,0
+pure_sqa,d0400,50,0,0,0,50,0
+pure_sqa,d0800,50,0,0,0,50,0
+pure_sqa,d1200,50,0,0,0,50,0
